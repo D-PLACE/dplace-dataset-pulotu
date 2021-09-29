@@ -32,6 +32,10 @@ class Dataset(BaseDataset):
     def cmd_download(self, args):
         pass
 
+    def read(self, name, d=None):
+        for row in (d or self.raw_dir).read_csv(name, dicts=True):
+            yield collections.OrderedDict((k, v.strip()) for k, v in row.items())
+
     def cmd_makecldf(self, args):
         args.writer.cldf.add_columns(
             'LanguageTable',
@@ -41,50 +45,58 @@ class Dataset(BaseDataset):
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_table(
             'glossary.csv',
-            'ID',
-            'Term',
-            'Definition')
+            {
+                'name': 'ID',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#id',
+            },
+            {
+                'name': 'Term',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#name',
+            },
+            {
+                'name': 'Definition',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#description',
+            },
+        )
 
-        for r in self.raw_dir.read_csv('core_glossary.csv', dicts=True):
+        for r in self.read('core_glossary.csv'):
             args.writer.objects['glossary.csv'].append(dict(
-                ID=slug(r['term']),
-                Term=r['term'],
-                Definition=r['definition'].strip(),
-            ))
+                ID=slug(r['term']), Term=r['term'], Definition=r['definition']))
 
-        cats = {r['id']: r['category'] for r in self.raw_dir.read_csv('categories.csv', dicts=True)}
+        cats = {r['id']: r['category'] for r in self.read('categories.csv')}
         sections = {}
-        for r in self.raw_dir.read_csv('sections.csv', dicts=True):
-            r['notes'] = r['notes'].strip()
+        for r in self.read('sections.csv'):
             r['category'] = cats.get(r['category_id'])
             sections[r['id']] = r
 
-        abvd2gc = {r['ID']: r['Glottocode'] for r in self.etc_dir.read_csv('languages.csv', dicts=True)}
-        l2abvd = {
-            r['id']: r['abvdcode'] for r in self.raw_dir.read_csv('languages.csv', dicts=True)}
-        c2abvd = {r['culture_id']: l2abvd[r['language_id']] for r in self.raw_dir.read_csv('cultures_languages.csv', dicts=True)}
+        abvd2gc = {r['ID']: r['Glottocode'] for r in self.read('languages.csv', d=self.etc_dir)}
+        l2abvd = {r['id']: r['abvdcode'] for r in self.read('languages.csv')}
+        c2abvd = {r['culture_id']: l2abvd[r['language_id']] for r in self.read('cultures_languages.csv')}
 
         c2id = {}
         cultures = collections.OrderedDict()
-        for r in self.raw_dir.read_csv('cultures.csv', dicts=True):
+        for r in self.read('cultures.csv'):
             c2id[r['id']] = r['slug']
             cultures[r['id']] = dict(
                 ID=r['slug'],
                 Name=r['culture'],
                 Comment=r['notes'],
                 Glottocode=abvd2gc.get(c2abvd[r['id']]),
-                Ethonyms=split_text(r['ethonyms'], separators=';', strip=True)
+                Ethonyms=split_text(r['ethonyms'], separators=';', strip=True),
+                #
+                # FIXME: Add Glottolog classification for navigation/searching?
+                #
             )
 
         codes = collections.defaultdict(collections.OrderedDict)
-        for r in self.raw_dir.read_csv('questions_option.csv', dicts=True):
+        for r in self.read('questions_option.csv'):
             opts = re.split('(\([0-9?]\))', r['options'])
             assert not opts[0].strip()
             for k, v in zip(opts[1::2], opts[::2][1:]):
                 codes[r['question_ptr_id']][k[1:-1]] = v.strip()
 
         public_questions = {}
-        for r in self.raw_dir.read_csv('questions.csv', dicts=True):
+        for r in self.read('questions.csv'):
             if r['displayPublic'] != 't':
                 public_questions[r['id']] = r['response_type']
                 args.writer.objects['ParameterTable'].append(dict(
@@ -95,6 +107,9 @@ class Dataset(BaseDataset):
                     Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
                     Section=sections[r['subsection_id']]['section'],
                     Subsection=sections[r['section_id']]['section'],
+                    #
+                    # FIXME: add "information" column - as editorial comment?
+                    #
                 ))
                 if r['id'] in codes:
                     for k, v in codes[r['id']].items():
@@ -110,16 +125,31 @@ class Dataset(BaseDataset):
             for r in self.raw_dir.read_csv('responses_{}.csv'.format(label), dicts=True):
                 responses[t][r['response_ptr_id']] = r['response']
 
-        #Option (126x)
-        #	                       Float (14x)
-        #	                       Int (7x)
-        #	                       Text (6x)
-
-        for r in self.raw_dir.read_csv('sources.csv', dicts=True):
+        for r in self.read('sources.csv'):
             args.writer.cldf.sources.add(Source(
                 'misc', r['id'], author=r['author'], year=r['year'], note=r['reference']))
 
-        for r in self.raw_dir.read_csv('responses.csv', dicts=True):
+        for r in self.read('responses.csv'):
+            # FIXME: incomplete!
+            """
+6. "uncertainty"
+
+	Type of data:          Boolean
+	Contains null values:  False
+	Unique values:         2
+	Most common values:    False (12261x)
+	                       True (7964x)
+3. "codersnotes"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         12608
+	Longest value:         19.720 characters
+	Most common values:    None (4349x)
+	                       No known cognate.  (44x)
+	                       See 'Population' and 'Area'. (16x)
+"author_id"
+"""
             if r['question_id'] in public_questions:
                 sources = []
                 for i in range(1, 6):

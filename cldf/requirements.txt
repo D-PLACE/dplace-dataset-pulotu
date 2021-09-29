@@ -9,6 +9,7 @@ colorlog==6.4.1
 csvw==1.11.0
 gitdb==4.0.7
 greenlet==1.1.1
+html5lib==1.1
 idna==3.2
 iniconfig==1.1.1
 isodate==0.6.0
@@ -35,5 +36,6 @@ termcolor==1.1.0
 tqdm==4.62.3
 uritemplate==3.0.1
 urllib3==1.26.7
+webencodings==0.5.1
 xlrd==2.0.1
 zenodoclient==0.4.1

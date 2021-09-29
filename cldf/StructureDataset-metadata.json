@@ -5,9 +5,11 @@
             "@language": "en"
         }
     ],
-    "dc:bibliographicCitation": "Watts J., Sheehan O., Greenhill S.J., Gomes-Ng S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database of Austronesian Supernatural Beliefs and Practices. PLoS ONE 10(9).",
+    "dc:bibliographicCitation": "Watts J., Sheehan O., Greenhill S.J., Gomes-Ng S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database of Austronesian Supernatural Beliefs and Practices. PLoS ONE 10(9). DOI: https://doi.org/10.1371/journal.pone.0136783",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#StructureDataset",
+    "dc:description": "Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices. You will find information on more than 130 cultures from the Moken of mainland Asia to the Maori of New Zealand.",
     "dc:identifier": "https://pulotu.com",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:source": "sources.bib",
     "dc:title": "Database of Pacific Religions",
     "dcat:accessURL": "https://github.com/d-place/pulotu-private",
@@ -15,7 +17,7 @@
         {
             "rdf:about": "https://github.com/d-place/pulotu-private",
             "rdf:type": "prov:Entity",
-            "dc:created": "0f346c6",
+            "dc:created": "153bb12",
             "dc:title": "Repository"
         },
         {
@@ -324,6 +326,29 @@
                 ]
             },
             "url": "codes.csv"
+        },
+        {
+            "dc:extent": 65,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "name": "ID"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "name": "Term"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "name": "Definition"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "glossary.csv"
         }
     ]
 }
