@@ -1,0 +1,259 @@
+ID,Parameter_ID,Name,Description
+7-1,7,1,"Atoll (an oceanic low island of coral origin, e.g. Ulithi)"
+7-2,7,2,"Volcanic high island (an oceanic island of volcanic origin, e.g. Hawaii)"
+7-3,7,3,"Tectonic (an oceanic island formed by tectonic uplift, e.g. Macquarie Island)"
+7-4,7,4,"Continental island (an island situated on a continental shelf, e.g. Taiwan)"
+19-0,19,0,Absent: No evidence of human occupation prior to Austronesian settlement
+19-1,19,1,Possible: Disputed / ambiguous evidence of human occupation prior to Austronesian settlement
+19-2,19,2,Present: Clear evidence of human occupation prior to Austronesian settlement
+92-1,92,1,"Low (Most people draw a clear distinction between the indigenous religion and the world religion (s), and do not combine indigenous and non-indigenous religious elements.)"
+92-2,92,2,"Medium (Most people draw a clear distinction between the indigenous religion and the world religion (s), but combine indigenous and non-indigenous religious elements.)"
+92-3,92,3,"High: (Most people do not draw a clear distinction between the indigenous religion the world religion, and combine indigenous and non-indigenous religious elements.)"
+2-1,2,1,One
+2-2,2,2,Two
+2-3,2,3,Three
+2-4,2,4,Four or more
+94-0,94,0,"No evidence of influence and not in region of known contact (No evidence of Christian influence on supernatural belief, and culture is unlikely to have had contact with Christian societies at or prior to the time focus in question.)"
+94-1,94,1,"No evidence of influence but in a region where contact is likely (No evidence of Christian influence on supernatural belief, but culture is known to have had (or is likely to have had) contact with Christian societies at or prior to the time focus in question.)"
+94-2,94,2,Evidence of influence (Evidence of Christian influence on supernatural belief.)
+71-0,71,0,"Absent (Replacement-level immigration did not occur – an immigrant culture was never present in the area, or was present but had a population size less than 10% of that of the indigenous culture.)"
+71-1,71,1,"Low (Replacement-level immigration occurred. The immigrant culture had a population size more than 10% of that of the indigenous culture at one time or another, but this figure never exceeded 50%.)"
+71-2,71,2,"Medium (Replacement-level immigration occurred. The immigrant culture had a population size more than 50% of that of the indigenous population at one time or another, but this figure never exceeded 100%.)"
+71-3,71,3,High (Replacement-level immigration occurred. At one time or another during the post-contact period the immigrant culture had a population size more than 100% of that of the indigenous population.)
+20-0,20,0,"No evidence of influence and not in region of known contact (No evidence of Hindu / Buddhist influence on supernatural belief, and culture is unlikely to have had contact with Hindu or Buddhist societies at or prior to to the time focus in question.)"
+20-1,20,1,"No evidence of influence but in a region where contact is likely (No evidence of Hindu / Buddhist influence on supernatural belief, but culture is likely to have had contact with Hindu or Buddhist societies at or prior to the time focus in question.)"
+20-2,20,2,Evidence of influence (Evidence of Hindu / Buddhist influence on supernatural belief.)
+17-1,17,1,"Frequent, through trade, warfare, travel, etc. (e.g. yearly or most years)"
+17-2,17,2,Occasional but not often (e.g. once in a generation)
+17-3,17,3,Rare or never (less than once in a generation)
+21-0,21,0,"No evidence of influence and not in region of known contact (No evidence of Islamic influence on supernatural belief, and culture is unlikely to have had contact with Islamic societies at or prior to the time focus in question.)"
+21-1,21,1,"No evidence of influence but in a region where contact is likely (No evidence of Islamic influence on supernatural belief, but culture is known to have had (or is likely to have had) contact with Islamic societies at or prior to the time focus in question.)"
+21-2,21,2,Evidence of influence (Evidence of Islamic influence on supernatural belief.)
+25-0,25,0,Absent
+25-1,25,1,Minor
+25-2,25,2,Medium
+25-3,25,3,Major
+25-4,25,4,Principal
+26-0,26,0,Absent
+26-1,26,1,Minor
+26-2,26,2,Medium
+26-3,26,3,Major
+26-4,26,4,Principal
+49-0,49,0,Absent
+49-1,49,1,Present
+67-0,67,0,Absent from culture
+67-1,67,1,"Present in culture, but not a rite or feature of a rite"
+67-2,67,2,Present in the culture as a rite or feature of a rite
+68-0,68,0,Absent from culture
+68-1,68,1,"Present in culture, but not as a rite or feature of a rite"
+68-2,68,2,Present in the culture as a rite or feature of a rite
+91-1,91,1,Low (The indigenous and world religion (s) have borrowed little from one another.)
+91-2,91,2,"Medium (The indigenous and world religion(s) have remained distinct, but one or both has borrowed substantially from the other.)"
+91-3,91,3,High (A new religion has formed which incorporates concepts and / or practices from both the indigenous and foreign religions.)
+72-1,72,1,Low (The indigenous language remained the sole or primary means of communication for most of the indigenous population for the duration of the post-contact period.)
+72-2,72,2,"Medium (The indigenous language remained an important means of communication for the duration of the post-contact period, but at one time or another the indigenous population used a non-indigenous language to roughly the same extent.)"
+72-3,72,3,"High (At one time or another during the post-contact period, a foreign language became the sole or primary means of communication for most of the indigenous population.)"
+73-1,73,1,Low (At no time during the post-contact period did more than 25% of indigenous children receive a basic non-indigenous education.)
+73-2,73,2,"Medium (At one time or another during the post-contact period over 25% of indigenous children received at least a basic non-indigenous education, but this figure never exceeded 75%.)"
+73-3,73,3,High (At one time or another during the post-contact period over 75% of children received some at least a basic non-indigenous education.)
+74-0,74,0,Absent (At no time during the post-contact period was the culture subject to a foreign government system.)
+74-1,74,1,"Present, but of low importance (At one time or another during the post-contact period, the culture was subject to a foreign government system, but this government system never controlled most important decisions.)"
+74-2,74,2,"Present, and of high importance (At one time or another during the post-contact period the culture was subject to a foreign government system that controlled most important decisions.)"
+75-1,75,1,Low (Principal and major means of subsistence have not changed from their indigenous states.)
+75-2,75,2,"Medium (Principal and major means of subsistence have changed from their indigenous states (e.g. through gain or loss of major and / or principal means of subsistence), but at least one of the major or principal means of subsistance has persisted.)"
+75-3,75,3,High (No indigenous means of subsistence has remained major or principal.)
+78-0,78,0,Absent (At no time during the post-contact period did most members of the culture have access either to roads or motor vehicles.)
+78-1,78,1,"Present but rarely used (At no time during the post-contact period were motor vehicles used by a substantial portion of the population, but at one time or another most members of population had access to roads suitable for motor vehicles.)"
+78-2,78,2,"Present and widely used (At one time or another during the post-contact period, motor vehicles were used by a substantial proportion of the population.)"
+80-0,80,0,Absent (At no time during the post-contact period did most members of the culture have access to an airport or airstrip.)
+80-1,80,1,"Present, local only (At no time during the post-contact period did most members of the culture have access to international air travel, but at one time or another most members of the culture had access to domestic air travel.)"
+80-2,80,2,"Present and long-distance (At one time or another, most members of the culture had access to international air travel.)"
+90-1,90,1,Christianity
+90-2,90,2,Islam
+90-3,90,3,Hinduism / Buddhism
+90-4,90,4,Other (Please specify in Coder’s Notes)
+57-0,57,0,Unrelated (Mana is unrelated to social status.)
+57-1,57,1,"Moderately associated (Mana is associated with social status, but high social status is not necessary in order to be mana or have mana.)"
+57-2,57,2,Tightly coupled (Mana is closely linked to social status – only people with high social status can be mana or have mana.)
+40-0,40,0,Absent (do not feature in the belief system of the culture)
+40-1,40,1,"Present, but not a major focus of supernatural practice"
+40-2,40,2,"Present, and a major focus of supernatural practice"
+40-3,40,3,"Present, and the principal focus of supernatural practice"
+62-0,62,0,Absent
+62-1,62,1,Present
+47-0,47,0,Absent
+47-1,47,1,"Present, and genealogically linked to humans now living"
+47-2,47,2,"Present, and genealogically distinct from humans"
+50-0,50,0,Absent
+50-1,50,1,Present
+51-0,51,0,Absent
+51-1,51,1,Present
+54-0,54,0,Absent
+54-1,54,1,Present
+58-0,58,0,Absent
+58-1,58,1,"Present, linked to paternal lines only"
+58-2,58,2,"Present, linked to maternal lines only"
+58-3,58,3,"Present, linked to both paternal and maternal lines"
+69-1,69,1,Low (The cultural remained politically autonomous throughout the post-contact period.) (Skip to Q.71)
+69-2,69,2,"Medium (The culture maintained some political autonomy throughout the post-contact period, but on at least one occasion during the post-contact period the culture entered into a political relationship with a foreign power that involved some loss of autonomy.)"
+69-3,69,3,"High (On at least one occasion during the post-contact period, the culture came under the political dominance of a foreign power, and this event resulted in considerable loss of autonomy.)"
+46-0,46,0,Absent
+46-1,46,1,"Present, and evolutionary (humanity came from some other form of life)"
+46-2,46,2,"Present, and creationist (humanity was created by some agent in the same form as he is today)"
+61-0,61,0,Absent
+61-1,61,1,Present
+61-2,61,2,NA (do not select)
+64-0,64,0,Absent from culture
+64-1,64,1,"Present in culture, but not as a rite or feature of a rite"
+64-2,64,2,Present in the culture as a rite or feature of a rite
+65-0,65,0,Absent from culture
+65-1,65,1,"Present in culture, but not as a rite or feature of a rite"
+65-2,65,2,Present in the culture as a rite or feature of a rite
+66-0,66,0,Absent from culture
+66-1,66,1,"Present in culture, but not as a rite or feature of a rite"
+66-2,66,2,Present in the culture as a rite or feature of a rite
+70-0,70,0,"Largely voluntary (Autonomy was ceded either voluntarily or as a result of pressure from other members of the same culture, without the threat of external force being necessary.)"
+70-1,70,1,Partly voluntary (e.g. Autonomy was ceded voluntarily but under duress; some communities ceded their autonomy voluntarily but others were forced to do so by an foreign power.)
+70-2,70,2,Largely involuntary (autonomy was lost largely as a result of external force)
+84-1,84,1,Primarily a top-down process.
+84-2,84,2,"Primarily a top-down process, although inroads had already been made with the general population."
+84-3,84,3,"Mixed / Neither (e.g. Both high-status individuals and the general population converted at the same time, or the religion was adopted through a mixture of top-down and bottom-up processes.)"
+84-4,84,4,"Primarily a bottom-up process, although those in power showed little or no reluctance."
+84-5,84,5,Primarily a bottom-up process.
+77-0,77,0,Absent (Exports were never part of the local economy.)
+77-1,77,1,"Present but minor (At one time or another exports were part of the local economy, but were never a primary focus of economic activity for more than 10% of the population .)"
+77-2,77,2,"Present and substantial (At one time or another during the post-contact period, exports were a primary focus of economic activity for over 10% of the population.)"
+83-0,83,0,Low (most communities adopted the new religion either voluntarily or due to pressure from other communities of the same culture)
+83-1,83,1,Medium (e.g  force was threatened or implied during  the conversion process;  some communities agreed to conversion but others were forced to convert)
+83-2,83,2,High (most communities were forced to convert)
+24-0,24,0,Absent
+24-1,24,1,Minor
+24-2,24,2,Medium
+24-3,24,3,Major
+24-4,24,4,Principal
+27-0,27,0,Absent
+27-1,27,1,Minor
+27-2,27,2,Medium
+27-3,27,3,Major
+27-4,27,4,Principal
+28-0,28,0,Absent
+28-1,28,1,Minor
+28-2,28,2,Medium
+28-3,28,3,Major
+28-4,28,4,Principal
+30-0,30,0,Absent
+30-1,30,1,Minor
+30-2,30,2,Medium
+30-3,30,3,Major
+30-4,30,4,Principal
+31-0,31,0,Absent
+31-1,31,1,Minor
+31-2,31,2,Medium
+31-3,31,3,Major
+31-4,31,4,Principal
+42-0,42,0,Absent
+42-1,42,1,Present
+56-0,56,0,Absent (SKIP REMAINDER OF SECTION)
+56-1,56,1,Present
+45-0,45,0,Absent (Actions of others after one has died do not affect nature of one’s afterlife)
+45-1,45,1,One factor in determining one's afterlife (Actions of others after one has died are one factor in determining the nature of one’s afterlife)
+45-2,45,2,Principal determinant of one's afterlife (Actions of others after one has died are the principal determinant of the nature of one’s afterlife)
+44-0,44,0,Absent (Actions while living do not affect the nature of one’s afterlife)
+44-1,44,1,One factor in determining one's afterlife (Actions while living are one factor in determining the nature of one's afterlife)
+44-2,44,2,Principal determinant of one's afterlife (Actions while living are the principal determinant of the nature of one’s afterlife)
+55-0,55,0,Absent
+55-1,55,1,Present
+79-0,79,0,Absent (At no time during the post-contact period did most members of the culture have access to a sea port.)
+79-1,79,1,Present (At one time or another during the post-contact period most members of the culture had access to a sea port.)
+34-0,34,0,Absent
+34-1,34,1,Present
+81-0,81,0,Absent or minimal (At no time during the post-contact period did more than 5% of the indigenous population practice a world religion.) (Skip to Q.87)
+81-1,81,1,"Present but minor (At one time or another during the post-contact period more than 5% of the indigenous population practiced a world religion, but this figure never exceeded 25%.)"
+81-2,81,2,"Present and major (At one time or another during the post-contact period more than 25% of the indigenous population practiced a world religion, but this figure never exceeded 75%.)"
+81-3,81,3,"Present and predominant (At one time or another during the post-contact period, at least 75% of the indigenous population practiced a world religion.)"
+87-0,87,0,Absent
+87-1,87,1,"Present, but did not survive to the present-day"
+87-2,87,2,"Present, and survived to the present day"
+59-1,59,1,"Considerable overlap between religious and political leaders (Most religious leaders, or the most prominent religious leaders, are also political leaders)"
+59-2,59,2,"Some overlap (Some religious leaders, but not the most prominent religious leaders, are also political leaders, or religious and political leaders are distinct but political leaders exert considerable influence on religious leaders)"
+59-3,59,3,"No overlap (Religious leaders are distinct from, and independent from, political leaders)"
+23-0,23,0,"Absent (not practiced in the culture, or practiced but not a food source)"
+23-1,23,1,Minor (forms a relatively insignificant part of diet)
+23-2,23,2,"Medium (a significant food source, but not one of the most important sources of food)"
+23-3,23,3,Major (one of the most important sources of food)
+23-4,23,4,Principal (more important than any other source of food)
+95-0,95,0,Absent (do not feature in the belief system of the culture)
+95-1,95,1,"Present, but not a major focus of supernatural practice"
+95-2,95,2,"Present, and a major focus of supernatural practice"
+95-3,95,3,"Present, and the principal focus of supernatural practice"
+82-0,82,0,"Absent (Resident foreign missionaries played no role, or only a minimal role, in the conversion process.)"
+82-1,82,1,"Present, and from Austronesian societies only (Resident foreign missionaries played an important role in the conversion process, but these missionaries were from other Austronesian societies only.)"
+82-2,82,2,"Present, and from non-Austronesian societies (Resident foreign missionaries, at least one of whom was from a non-Austronesian society, played an important role in the conversion process.)"
+38-0,38,0,Absent (do not feature in the belief system of the culture)
+38-1,38,1,"Present, but not a major focus of supernatural practice"
+38-2,38,2,"Present, and a major focus of supernatural practice"
+38-3,38,3,"Present, and the principal focus of supernatural practice"
+29-0,29,0,Absent
+29-1,29,1,Minor
+29-2,29,2,Medium
+29-3,29,3,Major
+29-4,29,4,Principal
+37-0,37,0,Absent (do not feature in the belief system of the culture)
+37-1,37,1,"Present, but not a major focus of supernatural practice"
+37-2,37,2,"Present, and a major focus of supernatural practice"
+37-3,37,3,"Present, and the principal focus of supernatural practice"
+36-0,36,0,Absent (do not feature in the belief system of the culture)
+36-1,36,1,"Present, but not a major focus of supernatural practice"
+36-2,36,2,"Present, and a major focus of supernatural practice"
+36-3,36,3,"Present, and the principal focus of supernatural practice"
+14-1,14,1,"Endemic (Conflict is frequent, is often violent, and is a pervasive aspect of daily life, e.g. feuding)."
+14-2,14,2,"High (Conflict is frequent and often violent, but is not a pervasive aspect of daily life.)"
+14-3,14,3,"Moderate (Conflict occurs frequently but is seldom violent, or is violent but occurs only occasionally.)"
+14-4,14,4,"Low (Conflict seldom occurs, and is almost never violent.)"
+39-0,39,0,Absent (do not feature in the belief system of the culture)
+39-1,39,1,"Present, but not a major focus of supernatural practice"
+39-2,39,2,"Present, and a major focus of supernatural practice"
+39-3,39,3,"Present, and the principal focus of supernatural practice"
+106-1,106,1,Low (Matrilateral descent plays little or no role in determining social status and / or group membership.)
+106-2,106,2,"Medium (Matrilateral descent plays an important role in determining social status and / or group membership, but is not the most important form of descent.)"
+106-3,106,3,"High (Matrilateral descent plays an important role in determining social status and / or group membership, and is more important than any other form of descent.)"
+105-1,105,1,Low (Patrilateral descent plays little or no role in determining social status and / or group membership.)
+105-2,105,2,"Medium (Patrilateral descent plays an important role in determining social status and / or group membership, but is not the most important form of descent.)"
+105-3,105,3,"High (Patrilateral descent plays an important role in determining social status and / or group membership, and is more important than any other form of descent.)"
+143-0,143,0,Absent
+143-1,143,1,Present
+140-0,140,0,Polyandry
+140-1,140,1,Monogamy prescribed
+140-2,140,2,"Monogamy preferred, but exceptional cases of polygyny"
+140-3,140,3,Limited polygyny (< 20% of married males)
+140-4,140,4,Full polygyny (20% or more of married males)
+141-1,141,1,Matrilocal or uxorilocal - with wife's kin
+141-2,141,2,Avunculocal - with husband's mother's brother's kin
+141-3,141,3,Patrilocal or virilocal - with husband's kin
+141-4,141,4,Ambilocal - with either wife's or husband's kin
+141-5,141,5,Neolocal - separate from kin
+142-1,142,1,Crow
+142-2,142,2,Dravidian
+142-3,142,3,Eskimo
+142-4,142,4,Hawaiian
+142-5,142,5,Iroquois
+142-6,142,6,Omaha
+142-7,142,7,Sudanese
+63-1,63,1,Household or smaller
+63-2,63,2,"Larger than a household, no larger than the local community (e.g. village)"
+63-3,63,3,"Larger than a local community, smaller than the society"
+63-4,63,4,Whole society or larger
+11-NA,11,?,Missing data
+11-1,11,1,99 or fewer
+11-2,11,2,100-999
+11-3,11,3,"1,000-9,999"
+11-4,11,4,"10,000-99,999"
+11-5,11,5,"100,000 or more"
+15-1,15,1,"Frequent, occurring at least yearly"
+15-2,15,2,"Common, at least every five years"
+15-3,15,3,"Occasional, at least every generation"
+15-4,15,4,Rare or never
+16-1,16,1,"Frequent, occurring at least yearly"
+16-2,16,2,"Common, at least every five years"
+16-3,16,3,"Occasional, at least every generation"
+16-4,16,4,Rare or never
