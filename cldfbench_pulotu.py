@@ -5,8 +5,6 @@ import collections
 from clldutils.text import split_text
 from clldutils.misc import slug
 from cldfbench import Dataset as BaseDataset, CLDFSpec
-from pycldf.sources import Source
-
 
 MD = {
     'Latitude': '5',
@@ -41,6 +39,10 @@ class Dataset(BaseDataset):
             'LanguageTable',
             'Comment',
             { 'name': 'Ethonyms', 'separator': '; '})
+        args.writer.cldf.add_columns(
+            'ValueTable',
+            'Notes',
+            { 'name': 'Uncertain', 'datatype': 'boolean'})
         args.writer.cldf.add_columns('ParameterTable', 'Datatype', 'Category', 'Section', 'Subsection')
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_table(
@@ -58,6 +60,8 @@ class Dataset(BaseDataset):
                 'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#description',
             },
         )
+
+        args.writer.cldf.sources.read(self.etc_dir / 'sources.bib')
 
         for r in self.read('core_glossary.csv'):
             args.writer.objects['glossary.csv'].append(dict(
@@ -83,9 +87,7 @@ class Dataset(BaseDataset):
                 Comment=r['notes'],
                 Glottocode=abvd2gc.get(c2abvd[r['id']]),
                 Ethonyms=split_text(r['ethonyms'], separators=';', strip=True),
-                #
                 # FIXME: Add Glottolog classification for navigation/searching?
-                #
             )
 
         codes = collections.defaultdict(collections.OrderedDict)
@@ -125,37 +127,19 @@ class Dataset(BaseDataset):
             for r in self.raw_dir.read_csv('responses_{}.csv'.format(label), dicts=True):
                 responses[t][r['response_ptr_id']] = r['response']
 
-        for r in self.read('sources.csv'):
-            args.writer.cldf.sources.add(Source(
-                'misc', r['id'], author=r['author'], year=r['year'], note=r['reference']))
+        srcmap = {r['id']: r['slug'] for r in self.read('sources.csv')}
 
         for r in self.read('responses.csv'):
-            # FIXME: incomplete!
-            """
-6. "uncertainty"
-
-	Type of data:          Boolean
-	Contains null values:  False
-	Unique values:         2
-	Most common values:    False (12261x)
-	                       True (7964x)
-3. "codersnotes"
-
-	Type of data:          Text
-	Contains null values:  True (excluded from calculations)
-	Unique values:         12608
-	Longest value:         19.720 characters
-	Most common values:    None (4349x)
-	                       No known cognate.  (44x)
-	                       See 'Population' and 'Area'. (16x)
-"author_id"
-"""
+            # FIXME: author_id could be resolved to user accounts, but several of these are
+            # semi-anonymous
             if r['question_id'] in public_questions:
                 sources = []
                 for i in range(1, 6):
                     sid, page = r['source{}_id'.format(i)], r['page{}'.format(i)]
                     if sid:
-                        sources.append('{}[{}]'.format(sid, page.replace(';', ',')) if page else sid)
+                        sid = srcmap[sid]
+                        if sid not in ['source-not-applicable2014']:
+                            sources.append('{}[{}]'.format(sid, page.replace(';', ',')) if page else sid)
                 res = responses[public_questions[r['question_id']]][r['id']]
                 if not res:
                     continue
@@ -174,7 +158,8 @@ class Dataset(BaseDataset):
                     Value=res,
                     Code_ID=cid,
                     Source=sources,
-                    #Description=r['notes'],
+                    Uncertain=r['uncertainty'] == 't',
+                    Notes=r['codersnotes'],
                 ))
 
         args.writer.objects['LanguageTable'] = list(cultures.values())
