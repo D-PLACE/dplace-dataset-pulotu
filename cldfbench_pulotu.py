@@ -52,7 +52,9 @@ class Dataset(BaseDataset):
             'ValueTable',
             'Notes',
             { 'name': 'Uncertain', 'datatype': 'boolean'})
-        args.writer.cldf.add_columns('ParameterTable', 'Simplified_Name', 'Datatype', 'Category', 'Section', 'Subsection')
+        args.writer.cldf.add_columns(
+            'ParameterTable', 'Simplified_Name', 'Datatype', 'Section_Notes',
+            'Category', 'Section', 'Subsection')
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_table(
             'glossary.csv',
@@ -115,14 +117,12 @@ class Dataset(BaseDataset):
                     ID=r['id'],
                     Name=QUESTIONS.get(name, name),
                     Simplified_Name=r['simplified_question'],
-                    Description=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
+                    Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
+                    Section_Notes=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
                     Datatype=r['response_type'] if r['id'] != '10' else 'Int',
                     Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
                     Section=sections[r['subsection_id']]['section'],
                     Subsection=sections[r['section_id']]['section'],
-                    #
-                    # FIXME: add "information" column - as editorial comment?
-                    #
                 ))
                 if r['id'] in codes:
                     for k, v in codes[r['id']].items():
