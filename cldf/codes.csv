@@ -102,7 +102,7 @@ ID,Parameter_ID,Name,Description
 46-2,46,2,"Present, and creationist (humanity was created by some agent in the same form as he is today)"
 61-0,61,0,Absent
 61-1,61,1,Present
-61-2,61,2,NA (do not select)
+61-2,61,2,
 64-0,64,0,Absent from culture
 64-1,64,1,"Present in culture, but not as a rite or feature of a rite"
 64-2,64,2,Present in the culture as a rite or feature of a rite
@@ -153,7 +153,7 @@ ID,Parameter_ID,Name,Description
 31-4,31,4,Principal
 42-0,42,0,Absent
 42-1,42,1,Present
-56-0,56,0,Absent (SKIP REMAINDER OF SECTION)
+56-0,56,0,Absent
 56-1,56,1,Present
 45-0,45,0,Absent (Actions of others after one has died do not affect nature of one’s afterlife)
 45-1,45,1,One factor in determining one's afterlife (Actions of others after one has died are one factor in determining the nature of one’s afterlife)

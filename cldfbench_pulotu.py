@@ -11,6 +11,10 @@ MD = {
     'Longitude': '6',
 }
 QID2MD = {v: k for k, v in MD.items()}
+STRIP_FROM_CODES = [
+    ' (SKIP REMAINDER OF SECTION)',
+    'NA (do not select)',
+]
 
 
 class Dataset(BaseDataset):
@@ -43,7 +47,7 @@ class Dataset(BaseDataset):
             'ValueTable',
             'Notes',
             { 'name': 'Uncertain', 'datatype': 'boolean'})
-        args.writer.cldf.add_columns('ParameterTable', 'Datatype', 'Category', 'Section', 'Subsection')
+        args.writer.cldf.add_columns('ParameterTable', 'Simplified_Name', 'Datatype', 'Category', 'Section', 'Subsection')
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_table(
             'glossary.csv',
@@ -104,6 +108,7 @@ class Dataset(BaseDataset):
                 args.writer.objects['ParameterTable'].append(dict(
                     ID=r['id'],
                     Name=r['question'].strip(),
+                    Simplified_Name=r['simplified_question'],
                     Description=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
                     Datatype=r['response_type'] if r['id'] != '10' else 'Int',
                     Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
@@ -115,6 +120,8 @@ class Dataset(BaseDataset):
                 ))
                 if r['id'] in codes:
                     for k, v in codes[r['id']].items():
+                        for s in STRIP_FROM_CODES:
+                            v = v.replace(s, '').strip()
                         args.writer.objects['CodeTable'].append(dict(
                             ID='{}-{}'.format(r['id'], k.replace('?', 'NA')),
                             Parameter_ID=r['id'],

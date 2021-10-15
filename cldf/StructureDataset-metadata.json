@@ -17,13 +17,13 @@
         {
             "rdf:about": "https://github.com/d-place/pulotu-private",
             "rdf:type": "prov:Entity",
-            "dc:created": "9bf60a5",
+            "dc:created": "1ff5d3c",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4-29-gdadebb5fde",
+            "dc:created": "v4.4",
             "dc:title": "Glottolog"
         }
     ],
@@ -257,6 +257,10 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "required": false,
                         "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Simplified_Name"
                     },
                     {
                         "datatype": "string",
