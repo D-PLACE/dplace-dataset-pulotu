@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/d-place/pulotu-private",
             "rdf:type": "prov:Entity",
-            "dc:created": "f4d5b7d",
+            "dc:created": "c6b1e82",
             "dc:title": "Repository"
         },
         {
@@ -101,10 +101,6 @@
                         "required": false,
                         "separator": ";",
                         "name": "Source"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Notes"
                     },
                     {
                         "datatype": "boolean",

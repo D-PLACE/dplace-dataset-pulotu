@@ -3,7 +3,7 @@ bs4==0.0.1
 certifi==2021.5.30
 chardet==4.0.0
 cldfbench==1.7.2
--e git+https://github.com/d-place/pulotu-private@f4d5b7d0de59170c325e58b9768ea1b9b2abc02a#egg=cldfbench_pulotu
+-e git+https://github.com/d-place/pulotu-private@c6b1e829c817ceb4cc562d597ef62785416b9f30#egg=cldfbench_pulotu
 cldfcatalog==1.3.2
 clldutils==3.9.0
 colorlog==6.4.1

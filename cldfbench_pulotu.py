@@ -50,7 +50,6 @@ class Dataset(BaseDataset):
             { 'name': 'Ethonyms', 'separator': '; '})
         args.writer.cldf.add_columns(
             'ValueTable',
-            'Notes',
             { 'name': 'Uncertain', 'datatype': 'boolean'})
         args.writer.cldf.add_columns(
             'ParameterTable', 'Simplified_Name', 'Datatype', 'Section_Notes',
@@ -172,7 +171,7 @@ class Dataset(BaseDataset):
                     Code_ID=cid,
                     Source=sources,
                     Uncertain=r['uncertainty'] == 't',
-                    Notes=r['codersnotes'],
+                    Comment=r['codersnotes'],
                 ))
 
         args.writer.objects['LanguageTable'] = list(cultures.values())
