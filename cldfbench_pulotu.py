@@ -15,6 +15,11 @@ STRIP_FROM_CODES = [
     ' (SKIP REMAINDER OF SECTION)',
     'NA (do not select)',
 ]
+QUESTIONS = {
+    'Distance to nearest continent': 'Distance to nearest continent (km)',
+    'Longitude of culture’s location': 'Longitude of culture’s location (°)',
+    'Latitude of culture’s location': 'Latitude of culture’s location (°)',
+}
 
 
 class Dataset(BaseDataset):
@@ -105,9 +110,10 @@ class Dataset(BaseDataset):
         for r in self.read('questions.csv'):
             if r['displayPublic'] != 't':
                 public_questions[r['id']] = r['response_type']
+                name = r['question'].strip()
                 args.writer.objects['ParameterTable'].append(dict(
                     ID=r['id'],
-                    Name=r['question'].strip(),
+                    Name=QUESTIONS.get(name, name),
                     Simplified_Name=r['simplified_question'],
                     Description=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
                     Datatype=r['response_type'] if r['id'] != '10' else 'Int',

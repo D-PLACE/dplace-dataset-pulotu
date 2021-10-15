@@ -71,7 +71,7 @@ The word “mana” is used in a number of Austronesian languages to refer eithe
 23,Agriculture / Horticulture,"This section concerns land and water-based subsistence activities.  Subsistence activities are those that are aimed at obtaining food directly.  Activities undertaken for commerce rather than subsistence should be coded under ""trade / wage labour"" rather than land and water-based subsistence activities.",,Option,Traditional Culture,Subsistence and Economy,Land-based means of subsistence
 95,Belief in nature god(s),,Nature god(s),Option,Traditional Culture,Belief (Indigenous),Supernatural Beings
 82,Resident missionary involvement in conversion process,,,Option,Post Contact History,Religious History,Conversion
-4,Distance to nearest continent,,,Float,Traditional Culture,Isolation,Isolation
+4,Distance to nearest continent (km),,,Float,Traditional Culture,Isolation,Isolation
 38,Belief in deified ancestor(s),,Deified ancestor(s),Option,Traditional Culture,Belief (Indigenous),Supernatural Beings
 29,Fishing and water-based hunting performed by individuals,"This section concerns land and water-based subsistence activities.  Subsistence activities are those that are aimed at obtaining food directly.  Activities undertaken for commerce rather than subsistence should be coded under ""trade / wage labour"" rather than land and water-based subsistence activities.",,Option,Traditional Culture,Subsistence and Economy,Water-based means of subsistence
 88,Contemporary Time Focus,"(NOTE: The current state coding sheet should describe the culture as it is at or around the time of coding. The time focus, then, should be as recent and narrow as is practical.)",Contemporary Time Focus,Text,Current Culture,Current Time Focus,Current Time Focus
@@ -85,8 +85,8 @@ The word “mana” is used in a number of Austronesian languages to refer eithe
 140,Polygamy (SCCS 861),,Polygamy,Option,Traditional Culture,Social Environment,Social Environment
 141,Marital residence (SCCS 69),,Marital residence,Option,Traditional Culture,Social Environment,Social Environment
 142,Kinship system (if applicable),,Kinship system,Option,Traditional Culture,Social Environment,Social Environment
-6,Longitude of culture’s location,"Islands that are connected by tidal zones should be considered one island.  However, when measuring island size, only areas of land that are permanently above sea level should be included.",Longitude,Float,Traditional Culture,Physical Environment,Location
-5,Latitude of culture’s location,"Islands that are connected by tidal zones should be considered one island.  However, when measuring island size, only areas of land that are permanently above sea level should be included.",Latitude,Float,Traditional Culture,Physical Environment,Location
+6,Longitude of culture’s location (°),"Islands that are connected by tidal zones should be considered one island.  However, when measuring island size, only areas of land that are permanently above sea level should be included.",Longitude,Float,Traditional Culture,Physical Environment,Location
+5,Latitude of culture’s location (°),"Islands that are connected by tidal zones should be considered one island.  However, when measuring island size, only areas of land that are permanently above sea level should be included.",Latitude,Float,Traditional Culture,Physical Environment,Location
 63,Largest religious community,,,Option,Traditional Culture,Practice (Indigenous),General Supernatural Practices (Indigenous)
 11,Estimated population of largest political community,,Population of largest political community,Option,Traditional Culture,Social Environment,Social Environment
 1,Traditional State Time Focus,,Traditional Time Focus,Text,Traditional Culture,Traditional State Time Focus,Traditional State Time Focus
