@@ -6,6 +6,7 @@ from clldutils.text import split_text
 from clldutils.misc import slug
 from cldfbench import Dataset as BaseDataset, CLDFSpec
 
+# The following variables go into LanguageTable, we want to be able to identify these by ID:
 MD = {
     'Latitude': '5',
     'Longitude': '6',
@@ -15,6 +16,7 @@ STRIP_FROM_CODES = [
     ' (SKIP REMAINDER OF SECTION)',
     'NA (do not select)',
 ]
+# We want to uniformly add units to relevant questions:
 QUESTIONS = {
     'Distance to nearest continent': 'Distance to nearest continent (km)',
     'Longitude of culture’s location': 'Longitude of culture’s location (°)',
@@ -116,7 +118,8 @@ class Dataset(BaseDataset):
                     ID=r['id'],
                     Name=QUESTIONS.get(name, name),
                     Simplified_Name=r['simplified_question'],
-                    Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
+                    # Don't add internal information which is targeted at coders.
+                    #Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
                     Section_Notes=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
                     Datatype=r['response_type'] if r['id'] != '10' else 'Int',
                     Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
@@ -142,8 +145,6 @@ class Dataset(BaseDataset):
         srcmap = {r['id']: r['slug'] for r in self.read('sources.csv')}
 
         for r in self.read('responses.csv'):
-            # FIXME: author_id could be resolved to user accounts, but several of these are
-            # semi-anonymous
             if r['question_id'] in public_questions:
                 sources = []
                 for i in range(1, 6):
@@ -170,8 +171,10 @@ class Dataset(BaseDataset):
                     Value=res,
                     Code_ID=cid,
                     Source=sources,
-                    Uncertain=r['uncertainty'] == 't',
-                    Comment=r['codersnotes'],
+                    # Uncertainty is not really informative or useful.
+                    #Uncertain=r['uncertainty'] == 't',
+                    # Coder's notes are typically informal, not meant for public release.
+                    #Comment=r['codersnotes'],
                 ))
 
         args.writer.objects['LanguageTable'] = list(cultures.values())
