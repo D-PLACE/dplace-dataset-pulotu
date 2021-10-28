@@ -26,11 +26,11 @@ GLOSSARY = {
                             'can expect to be in this life or the afterlife.'),
     'Internal warfare': (None, 'warfare between members of the same culture'),
     'Local community': (None, '”[t]he maximal group of persons who normally reside together in '
-                              'face-to-face association” (Murdock, 1950)”'),
+                              'face-to-face association” (Murdock, 1950)”', 'murdock1950'),
     'Deified ancestor': (None, lambda s: s.replace('became a god after death', 'acquired godlike powers after death')),
     'Tapu': (None, lambda s: s.replace('any restriction placed around', 'a restriction around')),
-    'High god': (None, lambda s: s.replace('Murdock, 1967, p 160', 'Swanson, 1960')),
+    'High god': (None, lambda s: s.replace('Murdock, 1967, p 160', 'Swanson, 1960'), 'swanson1960'),
     'Ritual': (None, lambda s: s.replace('A ritual is', '').strip()),
     'Culture': (None, lambda s: s.replace('Currie, Greenhill & Mace, 2010, p 3904; Mace & Jordan, 2005, p 116',
-                                          'Holden & Mace, 2005'))
+                                          'Holden & Mace, 2005'), 'holden-mace-2005')
 }

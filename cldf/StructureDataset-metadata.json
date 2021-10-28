@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/d-place/pulotu-private",
             "rdf:type": "prov:Entity",
-            "dc:created": "7a140d5",
+            "dc:created": "2b4238b",
             "dc:title": "Repository"
         },
         {
@@ -354,6 +354,11 @@
                     {
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "name": "Definition"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "separator": ";",
+                        "name": "Source"
                     }
                 ],
                 "primaryKey": [

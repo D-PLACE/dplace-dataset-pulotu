@@ -73,6 +73,11 @@ class Dataset(BaseDataset):
                 'name': 'Definition',
                 'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#description',
             },
+            {
+                'name': 'Source',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#source',
+                'separator': ';'
+            },
         )
 
         args.writer.cldf.sources.read(self.etc_dir / 'sources.bib')
@@ -80,8 +85,14 @@ class Dataset(BaseDataset):
         for r in self.read('core_glossary.csv'):
             d = dict(
                 ID=slug(r['term']), Term=r['term'], Definition=r['definition'])
-            term, definition = errata.GLOSSARY.get(d['Term'], (None, None))
-            if definition:
+            dd = errata.GLOSSARY.get(d['Term'])
+            if dd:
+                if len(dd) == 2:
+                    term, definition = dd
+                    source = None
+                else:
+                    term, definition, source = dd
+                    d['Source'] = [source]
                 if term:
                     d['Term'] = term
                     d['ID'] = slug(term)
