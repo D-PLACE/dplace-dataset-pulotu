@@ -6,6 +6,8 @@ from clldutils.text import split_text
 from clldutils.misc import slug
 from cldfbench import Dataset as BaseDataset, CLDFSpec
 
+import errata
+
 # The following variables go into LanguageTable, we want to be able to identify these by ID:
 MD = {
     'Latitude': '5',
@@ -76,8 +78,18 @@ class Dataset(BaseDataset):
         args.writer.cldf.sources.read(self.etc_dir / 'sources.bib')
 
         for r in self.read('core_glossary.csv'):
-            args.writer.objects['glossary.csv'].append(dict(
-                ID=slug(r['term']), Term=r['term'], Definition=r['definition']))
+            d = dict(
+                ID=slug(r['term']), Term=r['term'], Definition=r['definition'])
+            term, definition = errata.GLOSSARY.get(d['Term'], (None, None))
+            if definition:
+                if term:
+                    d['Term'] = term
+                    d['ID'] = slug(term)
+                if isinstance(definition, str):
+                    d['Definition'] = definition
+                else:
+                    d['Definition'] = definition(d['Definition'])
+            args.writer.objects['glossary.csv'].append(d)
 
         cats = {r['id']: r['category'] for r in self.read('categories.csv')}
         sections = {}

@@ -5,10 +5,10 @@ atoll,Atoll,"An oceanic island formed from the coral reef surrounding a sunken v
 austronesian,Austronesian,"Pertaining to the Austronesian languages, or to peoples that have historically spoken these languages."
 bottomupprocess,Bottom-up process,A process that begins with those of lower social status and spreads upwards to those of higher social status.
 continentalisland,Continental island,An island situated on a continental shelf.
-culture,Culture,"The word “culture” is used in two closely related ways in this database. The first meaning (“culture”, with no article) denotes traditions (beliefs, practices and knowledge) that are transmitted by social learning (Currie, Greenhill & Mace, 2010, p 3904; Mace & Jordan, 2005, p 116).  The second and more specific meaning (“a culture”) denotes the set of traditions that are characteristic of a particular group of people, or, conversely, a group of people characterised by a particular set of traditions."
+culture,Culture,"The word “culture” is used in two closely related ways in this database. The first meaning (“culture”, with no article) denotes traditions (beliefs, practices and knowledge) that are transmitted by social learning (Holden & Mace, 2005).  The second and more specific meaning (“a culture”) denotes the set of traditions that are characteristic of a particular group of people, or, conversely, a group of people characterised by a particular set of traditions."
 culturehero,Culture hero,A demigod whose actions are used to explain the presence of a particular feature of the physical or social world.
 creationistcreationmyth,Creationist creation myth,A myth concerning the origin of humanity in which humans were created by a supernatural agent.
-deifiedancestor,Deified ancestor,"A human ancestor who became a god after death. Unlike ancestral spirits, deified ancestors have spheres of influence and concern that usually extend beyond their families, and are usually believed to have lived in the distant past."
+deifiedancestor,Deified ancestor,"A human ancestor who acquired godlike powers after death. Unlike ancestral spirits, deified ancestors have spheres of influence and concern that usually extend beyond their families, and are usually believed to have lived in the distant past."
 demigod,Demigod,"A being that is stated or implied to be human or partly human, but who is believed to have had godlike powers while alive."
 evolutionarycreationmyth,Evolutionary creation myth,"A myth concerning the origin of humanity, in which humans arose spontaneously from some other form."
 externalwarfare,External warfare,Warfare with people of a different culture.
@@ -17,22 +17,22 @@ foreigneducationsystem,Foreign education system,An education system that is not 
 foreigngovernmentsystems,Foreign government systems,Systems of government other than those indigenous to the culture. Need not imply political dominance by foreigners – a culture can be politically independent but have a foreign government system.
 gathering,Gathering,The collection of wild plants or invertebrate animals for food or other uses.
 genitalcutting,Genital cutting,A bodily modification involving cutting of the genitals.
-greatgod,Great god,"A god who is not believed to have lived as a human, and whose presence is not tied to any one physical form or feature of the natural world."
+god,god,"a supernatural agent who was not originally a human being, is not identified with or closely tied to a particular physical manifestation, and is more powerful than most human beings can expect to be in this life or the afterlife."
 headhunting,Headhunting,The practice of killing people for the purpose of obtaining their heads.
-highgod,High god,"A high god is a being who created the universe and / or is the ultimate power in the universe (after Murdock, 1967, p 160)."
-humansacrifice,Human sacrifice,"The ritualised killing of a human being, in a non-military context, as a sacrifice."
+highgod,High god,"A high god is a being who created the universe and / or is the ultimate power in the universe (after Swanson, 1960)."
+humansacrifice,Human sacrifice,"The ritualised killing of a human being, in a non-military context, as a costly sacrifice."
 hunting,Hunting,"The killing of wild vertebrates, on land or in water but excluding fish, for food or other uses."
 immoralbehaviour,Immoral behaviour,Behaviour that harms other members of society and / or is believed to harm society itself.
 impiety,Impiety,Behaviour that directly offends a supernatural agent.
-internalwarfare,Internal warfare,Warfare that takes place between communities that share the same culture.
+internalwarfare,Internal warfare,warfare between members of the same culture
 jurisdictionalhierarchy,Jurisdictional hierarchy,"A vertically ordered set of levels of jurisdiction, in which each level has authority over the level of authority beneath it."
 kinshiptapu,Kinship tapu,A tapu concerning relations between (biological or non-biological) relatives.
 languageshift,Language shift,"The adoption of a foreign language by members of an indigenous culture. Coded as low if the indigenous language continued to be the principal means of communication, high if the foreign language became the principal means of communication, and medium if the indigenous and foreign languages were used to a roughly equal extent throughout the postcontact period."
 levelofjurisdiction,Level of jurisdiction,"A leader or group of leaders that has direct authority over a group of people, or over a subordinate leader or group of leaders."
-localcommunity,Local community,"A group of one or more nuclear families that share a common identity and are personally acquainted (at a minimum know each other faces). Except for in the case of nomadic peoples, local communities tend to be located within a contiguous geographic region."
+localcommunity,Local community,"”[t]he maximal group of persons who normally reside together in face-to-face association” (Murdock, 1950)”"
 mana,Mana,Any cognate of the proto-Oceanic word “*mana”.
-naturegod,Nature god,A god who is identified with or whose presence is closely tied to a  particular feature of the natural world.
-naturespirit,Nature spirit,A spirit who is identified with or whose presence is closely tied to a  particular feature of the natural world.
+naturegod,Nature god,"a supernatural agent who was not originally a human being, is identified with or closely tied to a particular feature of the natural world, and is more powerful than most human beings can expect to be in this life or the afterlife."
+naturespirit,Nature spirit,"a supernatural agent who was not originally a human being, is identified with or closely tied to a particular feature of the natural world, and is not more powerful than most human beings can expect to be in this life or the afterlife."
 officialsyncretism,Official syncretism,"Syncretism that is practiced, or explicitly endorsed by, a religious institution."
 plantanimaltapu,Plant / Animal tapu,A tapu concerning behaviour towards plants or animals.
 politicalcommunity,Political community,"The largest cultural group under a common jurisdiction, or if no defined leadership is present a group that makes important decisions by consensus."
@@ -42,7 +42,7 @@ religiousinfluence,Religious influence,Changes to a religious system that occur 
 replacementlevelimmigration,Replacement-level immigration,Large-scale migration of people from non-indigenous cultures into the ancestral territory of the culture being coded resulting in a decline in the proportion of the population that is indigenous.
 resourcemanagementtapu,Resource management tapu,A tapu aimed at protecting a communally owned resource.
 rite,Rite,A ritual marking an important change of personal status.
-ritual,Ritual,A ritual is a set sequence of actions performed in a manner prescribed by tradition. The causal explanation or justification for the behaviour is opaque or involves supernatural forces.
+ritual,Ritual,a set sequence of actions performed in a manner prescribed by tradition. The causal explanation or justification for the behaviour is opaque or involves supernatural forces.
 ritualsocialunit,Ritual social unit,A group of people that conducts rituals together.
 sacrifice,Sacrifice,The presentation and forfeiting of a valuable possession or resource to a supernatural agent.
 scarification,Scarification,A bodily modification involving the deliberate infliction of permanent scars.
