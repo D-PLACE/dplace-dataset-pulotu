@@ -17,13 +17,13 @@
         {
             "rdf:about": "https://github.com/d-place/pulotu-private",
             "rdf:type": "prov:Entity",
-            "dc:created": "2b4238b",
+            "dc:created": "c0a583f",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4-39-g73b759ff5f",
+            "dc:created": "v4.4",
             "dc:title": "Glottolog"
         }
     ],

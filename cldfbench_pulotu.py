@@ -100,6 +100,7 @@ class Dataset(BaseDataset):
                     d['Definition'] = definition
                 else:
                     d['Definition'] = definition(d['Definition'])
+
             args.writer.objects['glossary.csv'].append(d)
 
         cats = {r['id']: r['category'] for r in self.read('categories.csv')}

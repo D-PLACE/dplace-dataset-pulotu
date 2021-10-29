@@ -11,26 +11,26 @@ Swanson, G. E. (1960). The birth of the gods; the origin of primitive beliefs. U
 
 """
 GLOSSARY = {
-    'Great god': ('god', 'a supernatural agent who was not originally a human being, is not '
+    'Great god': ('God', 'A supernatural agent who was not originally a human being, is not '
                          'identified with or closely tied to a particular physical manifestation, '
                          'and is more powerful than most human beings can expect to be in this '
                          'life or the afterlife.'),
-    'Human sacrifice': (None, lambda s: s.replace('sacrifice', 'costly sacrifice')),
-    'Nature god': (None, 'a supernatural agent who was not originally a human being, is identified '
+    'Sacrifice': ('Costly sacrifice', lambda s: s),
+    'Nature god': (None, 'A supernatural agent who was not originally a human being, is identified '
                          'with or closely tied to a particular feature of the natural world, and '
                          'is more powerful than most human beings can expect to be in this life '
                          'or the afterlife.'),
-    'Nature spirit': (None, 'a supernatural agent who was not originally a human being, is '
+    'Nature spirit': (None, 'A supernatural agent who was not originally a human being, is '
                             'identified with or closely tied to a particular feature of the '
                             'natural world, and is not more powerful than most human beings '
                             'can expect to be in this life or the afterlife.'),
-    'Internal warfare': (None, 'warfare between members of the same culture'),
-    'Local community': (None, '”[t]he maximal group of persons who normally reside together in '
-                              'face-to-face association” (Murdock, 1950)”', 'murdock1950'),
+    'Internal warfare': (None, 'Warfare between members of the same culture'),
+    'Local community': (None, '”[T]he maximal group of persons who normally reside together in '
+                              'face-to-face association” (Murdock, 1950)', 'murdock1950'),
     'Deified ancestor': (None, lambda s: s.replace('became a god after death', 'acquired godlike powers after death')),
-    'Tapu': (None, lambda s: s.replace('any restriction placed around', 'a restriction around')),
+    'Tapu': (None, lambda s: s.replace('Any restriction placed around', 'A restriction around')),
     'High god': (None, lambda s: s.replace('Murdock, 1967, p 160', 'Swanson, 1960'), 'swanson1960'),
-    'Ritual': (None, lambda s: s.replace('A ritual is', '').strip()),
+    'Ritual': (None, lambda s: s.replace('A ritual is a', 'A').strip()),
     'Culture': (None, lambda s: s.replace('Currie, Greenhill & Mace, 2010, p 3904; Mace & Jordan, 2005, p 116',
-                                          'Holden & Mace, 2005'), 'holden-mace-2005')
+                                          'Mace & Holden, 2005'), 'mace-holden-2005')
 }
