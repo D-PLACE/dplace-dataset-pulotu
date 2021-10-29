@@ -1,5 +1,6 @@
 import re
 import pathlib
+import subprocess
 import collections
 
 from clldutils.text import split_text
@@ -41,10 +42,14 @@ class Dataset(BaseDataset):
             module="StructureDataset")
 
     def cmd_download(self, args):
-        pass
+        """
+        Collect the data from the dev branches of the UD repository forks
+        """
+        subprocess.check_call(
+            'git -C {} submodule update --remote'.format(self.dir.resolve()), shell=True)
 
     def read(self, name, d=None):
-        for row in (d or self.raw_dir).read_csv(name, dicts=True):
+        for row in (d or self.raw_dir.joinpath('pulotu-internal')).read_csv(name, dicts=True):
             yield collections.OrderedDict((k, v.strip()) for k, v in row.items())
 
     def cmd_makecldf(self, args):
@@ -163,7 +168,7 @@ class Dataset(BaseDataset):
 
         responses = collections.defaultdict(dict)
         for label, t in [('options', 'Option'), ('floats', 'Float'), ('integers', 'Int'), ('texts', 'Text')]:
-            for r in self.raw_dir.read_csv('responses_{}.csv'.format(label), dicts=True):
+            for r in self.read('responses_{}.csv'.format(label)):
                 responses[t][r['response_ptr_id']] = r['response']
 
         srcmap = {r['id']: r['slug'] for r in self.read('sources.csv')}

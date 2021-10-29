@@ -12,12 +12,12 @@
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:source": "sources.bib",
     "dc:title": "Database of Pacific Religions",
-    "dcat:accessURL": "https://github.com/d-place/pulotu-private",
+    "dcat:accessURL": "https://github.com/D-PLACE/dplace-dataset-pulotu",
     "prov:wasDerivedFrom": [
         {
-            "rdf:about": "https://github.com/d-place/pulotu-private",
+            "rdf:about": "https://github.com/D-PLACE/dplace-dataset-pulotu",
             "rdf:type": "prov:Entity",
-            "dc:created": "c0a583f",
+            "dc:created": "d6d4d93",
             "dc:title": "Repository"
         },
         {
@@ -25,6 +25,12 @@
             "rdf:type": "prov:Entity",
             "dc:created": "v4.4",
             "dc:title": "Glottolog"
+        },
+        {
+            "rdf:about": "https://github.com/D-PLACE/pulotu-internal",
+            "rdf:type": "prov:Entity",
+            "dc:created": "f444283",
+            "dc:title": "Repository"
         }
     ],
     "prov:wasGeneratedBy": [

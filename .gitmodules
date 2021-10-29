@@ -1,0 +1,4 @@
+[submodule "raw/pulotu-internal"]
+	path = raw/pulotu-internal
+	url = https://github.com/D-PLACE/pulotu-internal.git
+	branch = main
