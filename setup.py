@@ -9,7 +9,10 @@ setup(
     entry_points={
         'cldfbench.dataset': [
             'pulotu=cldfbench_pulotu:Dataset',
-        ]
+        ],
+        'cldfbench.commands': [
+            'pulotu=pulotu_commands',
+        ],
     },
     install_requires=[
         'cldfbench',

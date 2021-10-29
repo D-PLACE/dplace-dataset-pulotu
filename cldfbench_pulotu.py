@@ -26,6 +26,57 @@ QUESTIONS = {
     'Latitude of culture’s location': 'Latitude of culture’s location (°)',
 }
 
+CATEGORIES = [
+    'Traditional Culture',
+    'Post Contact History',
+    'Current Culture',
+]
+SECTIONS = [
+    'Belief (Current)',
+    'Religious History',
+    'Secular History',
+    'Belief (Indigenous)',
+    'Isolation',
+    'Physical Environment',
+    'Practice (Indigenous)',
+    'Social Environment',
+    'Subsistence and Economy',
+]
+SUBSECTIONS = [
+    'Supernatural Beings',
+    'Supernatural Punishment',
+    'Afterlife and Creation',
+    'General Features (Indigenous Belief)',
+    'Classes of Tapu',
+    'Mana',
+    'General Supernatural Practices (Indigenous)',
+    'Rites',
+    'Conflict',
+    'Land-based means of subsistence',
+    'Water-based means of subsistence',
+    'Commercial Activity',
+    'Geographical Range of Culture',
+    'Features of Island with Largest Culture Population',
+    'Conversion',
+    'Syncretic Movements',
+    'Demographic and Social Changes',
+    'Economic Changes',
+    'Modern Infrastructure',
+    'Loss of Autonomy',
+    'Religious Demographics',
+]
+
+
+def parameter_sort(parameter):
+    cat = parameter['Category']
+    sec = parameter['Section']
+    subsec = parameter['Subsection']
+    return (
+        CATEGORIES.index(cat) if cat in CATEGORIES else -1,
+        SECTIONS.index(sec) if sec in SECTIONS else -1,
+        SUBSECTIONS.index(subsec) if subsec in SUBSECTIONS else -1
+    )
+
 
 class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
@@ -58,10 +109,8 @@ class Dataset(BaseDataset):
             'Comment',
             { 'name': 'Ethonyms', 'separator': '; '})
         args.writer.cldf.add_columns(
-            'ValueTable',
-            { 'name': 'Uncertain', 'datatype': 'boolean'})
-        args.writer.cldf.add_columns(
-            'ParameterTable', 'Simplified_Name', 'Datatype', 'Section_Notes',
+            'ParameterTable',
+            'Simplified_Name', 'Datatype', 'Section_Notes',
             'Category', 'Section', 'Subsection')
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_table(
@@ -207,3 +256,88 @@ class Dataset(BaseDataset):
                 ))
 
         args.writer.objects['LanguageTable'] = list(cultures.values())
+        args.writer.objects['ParameterTable'] = sorted(
+            args.writer.objects['ParameterTable'], key=parameter_sort)
+
+
+VPK_2015 = {
+"1": "v1",
+"2": "v2",
+"3": "v3",
+"4": "v4",
+"5": "v5",
+"6": "v6",
+"7": "v7",
+"8": "v8",
+"9": "v9",
+"10": "v10",
+"11": "v11",
+"14": "v14",
+"15": "v15",
+"16": "v16",
+"17": "v17",
+"19": "v19",
+"20": "v20",
+"21": "v21",
+"94": "v22",
+"23": "v24",
+"24": "v25",
+"25": "v26",
+"26": "v27",
+"27": "v28",
+"28": "v29",
+"140": "v30",
+"30": "v31",
+"31": "v32",
+"34": "v35",
+"36": "v37",
+"95": "v38",
+"37": "v39",
+"38": "v40",
+"39": "v41",
+"40": "v42",
+"42": "v44",
+"44": "v46",
+"45": "v47",
+"46": "v48",
+"47": "v49",
+"49": "v51",
+"50": "v52",
+"51": "v53",
+"54": "v56",
+"55": "v57",
+"56": "v58",
+"57": "v59",
+"58": "v60",
+"59": "v61",
+"61": "v63",
+"62": "v64",
+"63": "v65",
+"64": "v66",
+"65": "v67",
+"66": "v68",
+"67": "v69",
+"68": "v70",
+"69": "v71",
+"70": "v72",
+"71": "v73",
+"72": "v74",
+"73": "v75",
+"74": "v76",
+"75": "v77",
+"77": "v79",
+"78": "v80",
+"79": "v81",
+"80": "v82",
+"81": "v83",
+"82": "v84",
+"83": "v85",
+"84": "v86",
+"87": "v89",
+"88": "v90",
+"90": "v92",
+"91": "v93",
+"92": "v94",
+"105": "v105",
+"106": "v106",
+}

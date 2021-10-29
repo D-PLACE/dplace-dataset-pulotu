@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/D-PLACE/dplace-dataset-pulotu",
             "rdf:type": "prov:Entity",
-            "dc:created": "d6d4d93",
+            "dc:created": "04e45df",
             "dc:title": "Repository"
         },
         {
@@ -107,10 +107,6 @@
                         "required": false,
                         "separator": ";",
                         "name": "Source"
-                    },
-                    {
-                        "datatype": "boolean",
-                        "name": "Uncertain"
                     }
                 ],
                 "foreignKeys": [
