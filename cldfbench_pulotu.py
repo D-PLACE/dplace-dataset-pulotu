@@ -196,8 +196,7 @@ class Dataset(BaseDataset):
                     ID=r['id'],
                     Name=QUESTIONS.get(name, name),
                     Simplified_Name=r['simplified_question'],
-                    # Don't add internal information which is targeted at coders.
-                    #Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
+                    Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
                     Section_Notes=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
                     Datatype=r['response_type'] if r['id'] != '10' else 'Int',
                     Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],

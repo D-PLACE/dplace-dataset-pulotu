@@ -1,6 +1,7 @@
 """
 
 """
+import textwrap
 import itertools
 import collections
 
@@ -9,7 +10,9 @@ from csvw.dsv import UnicodeWriter
 
 from cldfbench_pulotu import Dataset
 
-
+#
+# FIXME: add codebook!
+#
 def run(args):
     ds = Dataset()
     cldf = ds.cldf_reader()
@@ -19,7 +22,7 @@ def run(args):
         for r in cldf['ParameterTable']])
 
     with UnicodeWriter(
-            ds.dir / 'Pulotu_Database_{}.txt'.format(git_describe(ds.dir)), delimiter='\t') as w:
+            ds.dir / 'dist' / 'Pulotu_Database_{}.txt'.format(git_describe(ds.dir)), delimiter='\t') as w:
         header = ['Culture', 'Culture_Notes', 'Glottocode']
         for vid, vname in variables.items():
             header.extend(['v{}.{}'.format(vid, vname), 'v{}.Source'.format(vid)])
@@ -38,3 +41,37 @@ def run(args):
                 v = values.get(vid, {})
                 row.extend([v.get('Value'), '; '.join(v.get('Source', []))])
             w.writerow(row)
+
+    codebook = [
+        """# Pulotu Codebook 
+Updated:  30/6/2015 
+Pulotu:  Database of Austronesian Supernatural Belief and Practice 
+Authors:  Joseph Watts, Oliver Sheehan, Simon J. Greenhill, Stephanie Gomes-Ng, 
+Quentin D. Atkinson, Joseph Bulbulia and Russell D. Gray 
+Website: www.pulotu.com
+""",
+        #'## Section 1: Indigenous Time Focus'
+        #'### v1.Subdee',
+        # info
+        # ul of possible values
+    ]
+    codes = {
+        pid: list(codes) for pid, codes in
+        itertools.groupby(cldf['CodeTable'], lambda r: r['Parameter_ID'])}
+    for cat, ps in itertools.groupby(cldf['ParameterTable'], lambda r: r['Category']):
+        codebook.extend(['', '## {}'.format(cat)])
+        for p in ps:
+            codebook.extend(['', '### v{}: {}'.format(p['ID'], p['Name'])])
+            if p['Description']:
+                codebook.append('')
+                codebook.extend(textwrap.wrap(p['Description']))
+
+            if p['ID'] in codes:
+                codebook.append('')
+                for c in codes[p['ID']]:
+                    codebook.append('- ({}) {}'.format(c['Name'], c['Description']))
+                codebook.append('- (?) Missing data')
+
+    ds.dir.joinpath('dist', 'Pulotu_Database_{}_codebook.md'.format(git_describe(ds.dir))).write_text(
+        '\n'.join(codebook),
+        encoding='utf8')

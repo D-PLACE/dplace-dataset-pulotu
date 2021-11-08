@@ -17,13 +17,13 @@
         {
             "rdf:about": "https://github.com/D-PLACE/dplace-dataset-pulotu",
             "rdf:type": "prov:Entity",
-            "dc:created": "04e45df",
+            "dc:created": "6122578",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4",
+            "dc:created": "v4.4-39-g73b759ff5f",
             "dc:title": "Glottolog"
         },
         {
