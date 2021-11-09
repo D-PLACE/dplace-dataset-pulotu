@@ -1,9 +1,9 @@
-# Pulotu Codebook 
-Updated:  30/6/2015 
-Pulotu:  Database of Austronesian Supernatural Belief and Practice 
-Authors:  Joseph Watts, Oliver Sheehan, Simon J. Greenhill, Stephanie Gomes-Ng, 
-Quentin D. Atkinson, Joseph Bulbulia and Russell D. Gray 
-Website: www.pulotu.com
+# Pulotu: Dataset in tab-delimited txt format
+
+The file [Pulotu_Database.txt](Pulotu_Database.txt) provides the [Pulotu data](../cldf) as
+tab-delimited, single CSV file, with cultures as rows and variables as columns. A description
+of the variables follows below.
+
 
 
 ## Traditional Culture
@@ -20,7 +20,7 @@ other societies), the twenty-five year period immediately preceding
 the time focus should be taken into consideration (cf. Ember & Ember,
 1992).
 
-### v40: Belief in god(s)
+### v2: Belief in god(s)
 
 A god is a supernatural agent with a broad sphere of influence and
 concern, who is not restricted to any one physical form or
@@ -34,7 +34,7 @@ coder’s notes section.
 - (3) Present, and the principal focus of supernatural practice
 - (?) Missing data
 
-### v95: Belief in nature god(s)
+### v3: Belief in nature god(s)
 
 A nature god is a supernatural agent of non-human origin, who is not
 considered to be an ancestor, who has a broad sphere of influence and
@@ -51,7 +51,7 @@ nature god(s) in the Coder's Notes section.
 - (3) Present, and the principal focus of supernatural practice
 - (?) Missing data
 
-### v38: Belief in deified ancestor(s)
+### v4: Belief in deified ancestor(s)
 
 A deified ancestor is the spirit of a human or other corporeal being,
 ancestral to at least a subset of people within the culture, who
@@ -68,7 +68,7 @@ deified ancestor(s) in the Coder's Notes section.
 - (3) Present, and the principal focus of supernatural practice
 - (?) Missing data
 
-### v37: Belief in ancestral spirits
+### v5: Belief in ancestral spirits
 
 An ancestral spirit is the spirit of a deceased ancestor who was once
 a human or other corporeal being and continues to influence the lives
@@ -83,7 +83,7 @@ spirits of those who lived in the recent past.
 - (3) Present, and the principal focus of supernatural practice
 - (?) Missing data
 
-### v36: Belief in nature spirits
+### v6: Belief in nature spirits
 
 A nature spirit is a supernatural agent of non-human origin,who is not
 considered to be an ancestor, who has a narrow sphere of influence and
@@ -99,7 +99,7 @@ anywhere else.
 - (3) Present, and the principal focus of supernatural practice
 - (?) Missing data
 
-### v42: Belief in supernatural punishment for impiety
+### v7: Belief in supernatural punishment for impiety
 
 Impiety is behaviour that is directly offensive to gods or other
 supernatural agents – examples might include blasphemy, desecration of
@@ -109,7 +109,7 @@ a sacred site, or failing to carry out rituals correctly.
 - (1) Present
 - (?) Missing data
 
-### v47: Myth of a primordial pair
+### v8: Myth of a primordial pair
 
 A primordial pair is a male-female pair of supernatural beings who
 were present at the beginning of the world and are believed to be the
@@ -120,7 +120,7 @@ parents of the gods and/or of the human race.
 - (2) Present, and genealogically distinct from humans
 - (?) Missing data
 
-### v46: Myth of humanity’s creation
+### v9: Myth of humanity’s creation
 
 Please provide a brief description in the Coder's Notes section.
 
@@ -129,7 +129,7 @@ Please provide a brief description in the Coder's Notes section.
 - (2) Present, and creationist (humanity was created by some agent in the same form as he is today)
 - (?) Missing data
 
-### v45: Belief that the actions of others after one has died (e.g. funeral rites) can affect the nature of one's afterlife
+### v10: Belief that the actions of others after one has died (e.g. funeral rites) can affect the nature of one's afterlife
 
 Please provide a brief description in the Coder's Notes section.
 
@@ -138,7 +138,7 @@ Please provide a brief description in the Coder's Notes section.
 - (2) Principal determinant of one's afterlife (Actions of others after one has died are the principal determinant of the nature of one’s afterlife)
 - (?) Missing data
 
-### v44: Belief that one's actions while living can affect the nature of one's afterlife
+### v11: Belief that one's actions while living can affect the nature of one's afterlife
 
 Please provide a brief description in the Coder's Notes section.
 
@@ -147,7 +147,7 @@ Please provide a brief description in the Coder's Notes section.
 - (2) Principal determinant of one's afterlife (Actions while living are the principal determinant of the nature of one’s afterlife)
 - (?) Missing data
 
-### v39: Belief in culture hero(es)
+### v12: Belief in culture hero(es)
 
 A culture hero can be defined as (a) a human, or some other corporeal
 being, who had godlike powers while living and whose actions explain
@@ -165,13 +165,13 @@ section.
 - (3) Present, and the principal focus of supernatural practice
 - (?) Missing data
 
-### v34: Belief that forces of nature (eg. winds, tides, seasons, day and night) are controlled by or imbued with the supernatural
+### v13: Belief that forces of nature (eg. winds, tides, seasons, day and night) are controlled by or imbued with the supernatural
 
 - (0) Absent
 - (1) Present
 - (?) Missing data
 
-### v49: Social hierarchy tapu
+### v14: Social hierarchy tapu
 
 A tapu that mandates or forbids certain behaviours between people of
 differing social status.
@@ -180,7 +180,7 @@ differing social status.
 - (1) Present
 - (?) Missing data
 
-### v50: Kinship tapu
+### v15: Kinship tapu
 
 A tapu that mandates or forbids certain behaviours between biological
 or classificatory relatives
@@ -189,7 +189,7 @@ or classificatory relatives
 - (1) Present
 - (?) Missing data
 
-### v51: Resource management tapu
+### v16: Resource management tapu
 
 A tapu that protects, either permanently or temporarily, an important
 communally-owned resource
@@ -198,7 +198,7 @@ communally-owned resource
 - (1) Present
 - (?) Missing data
 
-### v57: Mana and social status
+### v17: Mana and social status
 
 Please provide a brief description in the Coder's Notes section.
 
@@ -207,7 +207,7 @@ Please provide a brief description in the Coder's Notes section.
 - (2) Tightly coupled (Mana is closely linked to social status – only people with high social status can be mana or have mana.)
 - (?) Missing data
 
-### v54: Mana related to social influence or technical skill
+### v18: Mana related to social influence or technical skill
 
 e.g.  mana means “prestige”  Please provide a brief description in the
 Coder's Notes section.
@@ -216,7 +216,7 @@ Coder's Notes section.
 - (1) Present
 - (?) Missing data
 
-### v58: Mana linked to genealogy
+### v19: Mana linked to genealogy
 
 Does descent have a bearing on whether someone is or has mana?
 
@@ -226,7 +226,7 @@ Does descent have a bearing on whether someone is or has mana?
 - (3) Present, linked to both paternal and maternal lines
 - (?) Missing data
 
-### v56: Mana as a personal quality
+### v20: Mana as a personal quality
 
 In the culture in question, does it make sense to describe a person or
 other agent as being mana / having mana?    Please provide a brief
@@ -236,7 +236,7 @@ description in the Coder's Notes section.
 - (1) Present
 - (?) Missing data
 
-### v55: Mana as a spiritual or religious concept
+### v21: Mana as a spiritual or religious concept
 
 e.g. mana means “favoured by the gods”.  Please provide a brief
 description in the Coder's Notes section.
@@ -245,7 +245,7 @@ description in the Coder's Notes section.
 - (1) Present
 - (?) Missing data
 
-### v19: Pre-Austronesian population
+### v22: Pre-Austronesian population
 
 The eastern limit of pre-Austronesian settlement according to
 Bellwood, Fox and Tryon (1995, p 109) is illustrated in Map 1 - this
@@ -259,14 +259,14 @@ areas east of the line should be coded as (0).
 - (2) Present: Clear evidence of human occupation prior to Austronesian settlement
 - (?) Missing data
 
-### v94: Christian influence on supernatural belief
+### v23: Christian influence on supernatural belief
 
 - (0) No evidence of influence and not in region of known contact (No evidence of Christian influence on supernatural belief, and culture is unlikely to have had contact with Christian societies at or prior to the time focus in question.)
 - (1) No evidence of influence but in a region where contact is likely (No evidence of Christian influence on supernatural belief, but culture is known to have had (or is likely to have had) contact with Christian societies at or prior to the time focus in question.)
 - (2) Evidence of influence (Evidence of Christian influence on supernatural belief.)
 - (?) Missing data
 
-### v20: Hindu / Buddhist influence on supernatural belief
+### v24: Hindu / Buddhist influence on supernatural belief
 
 The limits of Hindu / Buddhist influence in Indonesia and the
 Philippines, according to Cribb (2000), are illustrated in Map 2 -
@@ -278,7 +278,7 @@ Resources".
 - (2) Evidence of influence (Evidence of Hindu / Buddhist influence on supernatural belief.)
 - (?) Missing data
 
-### v17: (Low) contact with other societies (SCCS v 787)
+### v25: (Low) contact with other societies (SCCS v 787)
 
 For the purposes of coding, contact with other societies is direct or
 indirect contact between one or more members of the culture being
@@ -292,7 +292,7 @@ most political communities within the culture should be coded.
 - (3) Rare or never (less than once in a generation)
 - (?) Missing data
 
-### v21: Islamic influence on supernatural belief
+### v26: Islamic influence on supernatural belief
 
 The progress of Islamisation prior to 1650 in Indonesia and the
 Philippines, according to Cribb (2000), is illustrated in Map 3 - this
@@ -303,7 +303,7 @@ map is available on Google Drive in the folder "Pan Island Resources".
 - (2) Evidence of influence (Evidence of Islamic influence on supernatural belief.)
 - (?) Missing data
 
-### v3: Distance to closest landmass inhabited by a different culture (km)
+### v27: Distance to closest landmass inhabited by a different culture (km)
 
 (NOTE 1: A different culture, for the purposes of this coding sheet,
 is any culture other than the culture being coded.     NOTE 2: The
@@ -315,25 +315,25 @@ the western archipelago to the westernmost island of the eastern
 archipelago.     NOTE 3: If there was a different culture living on
 the same island, code this distance as “0”.)
 
-### v4: Distance to nearest continent (km)
+### v28: Distance to nearest continent (km)
 
 Minimum distance to nearest continent
 
-### v6: Longitude of culture’s location (°)
+### v29: Longitude of culture’s location (°)
 
 Longitude of the centre of the area occupied by the culture, in
 decimal degrees to one decimal place. If culture occupies more than
 one contiguous area, use the area with the largest culture population,
 or, if unknown, the largest area.
 
-### v5: Latitude of culture’s location (°)
+### v30: Latitude of culture’s location (°)
 
 Latitude of the centre of the area occupied by the culture, in decimal
 degrees to one decimal place. If culture occupies more than one
 contiguous area, use the area with the largest culture population, or,
 if unknown, the largest area.
 
-### v2: Number of islands inhabited by culture
+### v31: Number of islands inhabited by culture
 
 - (1) One
 - (2) Two
@@ -341,7 +341,7 @@ if unknown, the largest area.
 - (4) Four or more
 - (?) Missing data
 
-### v7: Island type (island with largest culture population or largest island if unknown)
+### v32: Island type (island with largest culture population or largest island if unknown)
 
 Only one of these options can be selected. If more than one of these
 processes was involved in the formation of the island, please code the
@@ -353,19 +353,19 @@ most process that is most representative.
 - (4) Continental island (an island situated on a continental shelf, e.g. Taiwan)
 - (?) Missing data
 
-### v9: Maximum elevation (meters)
+### v33: Maximum elevation (meters)
 
 (Of island with largest population of culture or largest island if
 unknown)
 
-### v8: Island Size (km²)
+### v34: Island Size (km²)
 
 Include any bodies of fresh water such as lakes, but do not include
 saltwater bodies such as lagoons. Consider atolls made up of smaller
 islets to be one island.     (Of island with largest population of
 culture or largest island if unknown)
 
-### v62: Costly sacrifices and offerings
+### v35: Costly sacrifices and offerings
 
 Costly sacrifices and offerings are defined as the presentation of an
 object of more-than-trivial value to a supernatural agent, which
@@ -384,7 +384,7 @@ sacrificed to and things sacrificed) in the Coder's Notes section.
 - (1) Present
 - (?) Missing data
 
-### v61: Headhunting
+### v36: Headhunting
 
 Headhunting is the practice of killing people for the sole or primary
 purpose of obtaining their heads.     Please provide a brief
@@ -396,14 +396,14 @@ Notes section).
 - (2) None
 - (?) Missing data
 
-### v59: Political and religious differentiation (SCCS v 757)
+### v37: Political and religious differentiation (SCCS v 757)
 
 - (1) Considerable overlap between religious and political leaders (Most religious leaders, or the most prominent religious leaders, are also political leaders)
 - (2) Some overlap (Some religious leaders, but not the most prominent religious leaders, are also political leaders, or religious and political leaders are distinct but political leaders exert considerable influence on religious leaders)
 - (3) No overlap (Religious leaders are distinct from, and independent from, political leaders)
 - (?) Missing data
 
-### v63: Largest religious community
+### v38: Largest religious community
 
 A religious community is a group of people that (a) are organised
 under the same religious authority, and / or (b) conduct religious
@@ -415,7 +415,7 @@ rituals together on a regular basis.
 - (4) Whole society or larger
 - (?) Missing data
 
-### v67: Genital cutting
+### v39: Genital cutting
 
 Please provide a brief description (age, gender, context) in the
 Coder's Notes section.
@@ -425,7 +425,7 @@ Coder's Notes section.
 - (2) Present in the culture as a rite or feature of a rite
 - (?) Missing data
 
-### v68: Tooth pulling
+### v40: Tooth pulling
 
 Please provide a brief description (age, gender, context) in the
 Coder's Notes section.
@@ -435,7 +435,7 @@ Coder's Notes section.
 - (2) Present in the culture as a rite or feature of a rite
 - (?) Missing data
 
-### v64: Tattooing
+### v41: Tattooing
 
 Please provide a brief description (age, gender, context) in the
 Coder's Notes section.
@@ -445,7 +445,7 @@ Coder's Notes section.
 - (2) Present in the culture as a rite or feature of a rite
 - (?) Missing data
 
-### v65: Scarification
+### v42: Scarification
 
 Scarification must involve deliberately inflicted permanent scarring,
 not superficial cutting.  Please provide a brief description (age,
@@ -456,7 +456,7 @@ gender, context) in the Coder's Notes section.
 - (2) Present in the culture as a rite or feature of a rite
 - (?) Missing data
 
-### v66: Piercing
+### v43: Piercing
 
 Please provide a brief description (age, gender, context) in the
 Coder's Notes section.
@@ -466,23 +466,23 @@ Coder's Notes section.
 - (2) Present in the culture as a rite or feature of a rite
 - (?) Missing data
 
-### v10: Estimate of culture population size at relevant time focus
+### v44: Estimate of culture population size at relevant time focus
 
-### v106: Importance of Matrilateral descent (V.2)
+### v45: Importance of Matrilateral descent (V.2)
 
 - (1) Low (Matrilateral descent plays little or no role in determining social status and / or group membership.)
 - (2) Medium (Matrilateral descent plays an important role in determining social status and / or group membership, but is not the most important form of descent.)
 - (3) High (Matrilateral descent plays an important role in determining social status and / or group membership, and is more important than any other form of descent.)
 - (?) Missing data
 
-### v105: Importance of Patrilateral descent (V.2)
+### v46: Importance of Patrilateral descent (V.2)
 
 - (1) Low (Patrilateral descent plays little or no role in determining social status and / or group membership.)
 - (2) Medium (Patrilateral descent plays an important role in determining social status and / or group membership, but is not the most important form of descent.)
 - (3) High (Patrilateral descent plays an important role in determining social status and / or group membership, and is more important than any other form of descent.)
 - (?) Missing data
 
-### v140: Polygamy (SCCS 861)
+### v47: Polygamy (SCCS 861)
 
 - (0) Polyandry
 - (1) Monogamy prescribed
@@ -491,7 +491,7 @@ Coder's Notes section.
 - (4) Full polygyny (20% or more of married males)
 - (?) Missing data
 
-### v141: Marital residence (SCCS 69)
+### v48: Marital residence (SCCS 69)
 
 - (1) Matrilocal or uxorilocal - with wife's kin
 - (2) Avunculocal - with husband's mother's brother's kin
@@ -500,7 +500,7 @@ Coder's Notes section.
 - (5) Neolocal - separate from kin
 - (?) Missing data
 
-### v142: Kinship system (if applicable)
+### v49: Kinship system (if applicable)
 
 - (1) Crow
 - (2) Dravidian
@@ -511,7 +511,7 @@ Coder's Notes section.
 - (7) Sudanese
 - (?) Missing data
 
-### v11: Estimated population of largest political community
+### v50: Estimated population of largest political community
 
 A political community can be defined as a group of people sharing a
 common jurisdiction, or if no defined leadership is present as a group
@@ -527,7 +527,7 @@ politically by people from within the culture, should be coded.
 - (5) 100,000 or more
 - (?) Missing data
 
-### v14: (No) conflict (social or political) within the local community (SCCS v 767)
+### v51: (No) conflict (social or political) within the local community (SCCS v 767)
 
 Conflict within the local community can include both interpersonal and
 intergroup conflict. Only conflict that poses a realistic threat to
@@ -540,7 +540,7 @@ our purposes.
 - (4) Low (Conflict seldom occurs, and is almost never violent.)
 - (?) Missing data
 
-### v15: (No) internal warfare (between communities of the same society)  (SCCS v 773)
+### v52: (No) internal warfare (between communities of the same society)  (SCCS v 773)
 
 For the purposes of coding, internal warfare is warfare (i.e. lethal
 conflict between two or more groups of people) that takes place at or
@@ -555,7 +555,7 @@ to the same culture would be considered internal.
 - (4) Rare or never
 - (?) Missing data
 
-### v16: (No) external warfare (with other societies) (SCCS v 774)
+### v53: (No) external warfare (with other societies) (SCCS v 774)
 
 For the purposes of coding, external warfare is warfare (i.e. lethal
 conflict between two or more groups of people) between members of the
@@ -571,7 +571,7 @@ the culture should be coded.
 - (4) Rare or never
 - (?) Missing data
 
-### v143: Metalworking
+### v54: Metalworking
 
 Metalworking should be coded as present if metal tools and / or
 weapons are manufactured by members of the culture and are used widely
@@ -583,7 +583,7 @@ materials are involved.
 - (1) Present
 - (?) Missing data
 
-### v25: Animal husbandry as a source of food
+### v55: Animal husbandry as a source of food
 
 Animals can be considered domestic if they are dependent, to an
 extent, on human care. Animals that were originally domestic but have
@@ -597,7 +597,7 @@ category.
 - (4) Principal
 - (?) Missing data
 
-### v26: Land-based hunting performed by individuals
+### v56: Land-based hunting performed by individuals
 
 For the purposes of this question and the next, hunting can be
 considered the killing of vertebrates for food. Invertebrates such as
@@ -615,7 +615,7 @@ pigs usually require group hunting strategies.
 - (4) Principal
 - (?) Missing data
 
-### v24: Land-based gathering
+### v57: Land-based gathering
 
 Gathering is defined as the collection, as opposed to hunting, of wild
 foods.  These foods can include parts of plants (e.g. fruits, nuts,
@@ -631,7 +631,7 @@ coded under “agriculture / horticulture”.
 - (4) Principal
 - (?) Missing data
 
-### v27: Land-based hunting performed by one or more groups
+### v58: Land-based hunting performed by one or more groups
 
 - (0) Absent
 - (1) Minor
@@ -640,7 +640,7 @@ coded under “agriculture / horticulture”.
 - (4) Principal
 - (?) Missing data
 
-### v23: Agriculture / Horticulture
+### v59: Agriculture / Horticulture
 
 Agriculture and horticulture refer to the cultivation of plants for
 food or other uses. In many parts of the Pacific, important food
@@ -655,7 +655,7 @@ is operating, and to what extent, before coding.
 - (4) Principal (more important than any other source of food)
 - (?) Missing data
 
-### v28: Water-based gathering
+### v60: Water-based gathering
 
 For the purposes of this question, water-based gathering can be
 considered the collection of marine or freshwater plant foods (e.g.
@@ -668,7 +668,7 @@ seaweed) and of small invertebrates such as shellfish and crustaceans.
 - (4) Principal
 - (?) Missing data
 
-### v30: Fishing and water-based hunting performed by one or more groups
+### v61: Fishing and water-based hunting performed by one or more groups
 
 - (0) Absent
 - (1) Minor
@@ -677,7 +677,7 @@ seaweed) and of small invertebrates such as shellfish and crustaceans.
 - (4) Principal
 - (?) Missing data
 
-### v29: Fishing and water-based hunting performed by individuals
+### v62: Fishing and water-based hunting performed by individuals
 
 Fishing includes the harvesting of true fish as well as large, motile
 invertebrates such as octopus and squid. Water-based hunting involves
@@ -697,7 +697,7 @@ individuals, but deepwater fishing usually requires a group approach.
 - (4) Principal
 - (?) Missing data
 
-### v31: Trade / wage labour as a source of food
+### v63: Trade / wage labour as a source of food
 
 - (0) Absent
 - (1) Minor
@@ -708,7 +708,7 @@ individuals, but deepwater fishing usually requires a group approach.
 
 ## Post Contact History
 
-### v84: Was a foreign religion adopted through a top-down (those high in the social hierarchy converted first, followed by the general population) or a bottom-up (the general population converted first, followed by those high in the social hierarchy) process?
+### v64: Was a foreign religion adopted through a top-down (those high in the social hierarchy converted first, followed by the general population) or a bottom-up (the general population converted first, followed by those high in the social hierarchy) process?
 
 Please provide a brief description in the Coder's Notes section.
 
@@ -719,7 +719,7 @@ Please provide a brief description in the Coder's Notes section.
 - (5) Primarily a bottom-up process.
 - (?) Missing data
 
-### v83: Use of force in conversion
+### v65: Use of force in conversion
 
 Was a religion imposed on the culture by a colonial government /
 external cultural body?  If more than one conversion took place
@@ -733,7 +733,7 @@ section.
 - (2) High (most communities were forced to convert)
 - (?) Missing data
 
-### v81: Adoption of a world religion
+### v66: Adoption of a world religion
 
 Did a substantial proportion of the indigenous population adopt a
 world religion?    Please provide a brief description (including
@@ -746,7 +746,7 @@ Notes section.
 - (3) Present and predominant (At one time or another during the post-contact period, at least 75% of the indigenous population practiced a world religion.)
 - (?) Missing data
 
-### v82: Resident missionary involvement in conversion process
+### v67: Resident missionary involvement in conversion process
 
 Did resident foreign missionaries play a significant role in the
 conversion process?    Please provide a brief description (including
@@ -758,7 +758,7 @@ denomination of missionaries) in the Coder's Notes section.
 - (2) Present, and from non-Austronesian societies (Resident foreign missionaries, at least one of whom was from a non-Austronesian society, played an important role in the conversion process.)
 - (?) Missing data
 
-### v87: Syncretic religious movements
+### v68: Syncretic religious movements
 
 A syncretic religious movement, for the purposes of coding, is an
 organised religious group that integrates features of an indigenous
@@ -770,7 +770,7 @@ any syncretic religious movements in the Coder’s Notes section.
 - (2) Present, and survived to the present day
 - (?) Missing data
 
-### v71: Replacement-level immigration
+### v69: Replacement-level immigration
 
 Replacement-level immigration, for the purposes of coding, is
 migration of people from non-indigenous cultures (i.e. cultures that
@@ -788,14 +788,14 @@ acculturation.
 - (3) High (Replacement-level immigration occurred. At one time or another during the post-contact period the immigrant culture had a population size more than 100% of that of the indigenous population.)
 - (?) Missing data
 
-### v72: Language shift
+### v70: Language shift
 
 - (1) Low (The indigenous language remained the sole or primary means of communication for most of the indigenous population for the duration of the post-contact period.)
 - (2) Medium (The indigenous language remained an important means of communication for the duration of the post-contact period, but at one time or another the indigenous population used a non-indigenous language to roughly the same extent.)
 - (3) High (At one time or another during the post-contact period, a foreign language became the sole or primary means of communication for most of the indigenous population.)
 - (?) Missing data
 
-### v73: Foreign education systems
+### v71: Foreign education systems
 
 i.e. education systems not indigenous to the culture
 
@@ -804,7 +804,7 @@ i.e. education systems not indigenous to the culture
 - (3) High (At one time or another during the post-contact period over 75% of children received some at least a basic non-indigenous education.)
 - (?) Missing data
 
-### v74: Foreign government systems
+### v72: Foreign government systems
 
 A foreign government system need not imply political dominance by
 foreigners. A country may be politically independent and be governed
@@ -816,7 +816,7 @@ foreign origin.
 - (2) Present, and of high importance (At one time or another during the post-contact period the culture was subject to a foreign government system that controlled most important decisions.)
 - (?) Missing data
 
-### v75: Changes in means of subsistence
+### v73: Changes in means of subsistence
 
 Means of subsistence can incorporate new features (e.g. new
 technologies) without being fundamentally changed.
@@ -826,7 +826,7 @@ technologies) without being fundamentally changed.
 - (3) High (No indigenous means of subsistence has remained major or principal.)
 - (?) Missing data
 
-### v77: Exportation of goods to other cultures
+### v74: Exportation of goods to other cultures
 
 Please provide a brief description of major trading partners and types
 of goods traded in the Coder's Notes section.
@@ -836,7 +836,7 @@ of goods traded in the Coder's Notes section.
 - (2) Present and substantial (At one time or another during the post-contact period, exports were a primary focus of economic activity for over 10% of the population.)
 - (?) Missing data
 
-### v78: Vehicles and roads
+### v75: Vehicles and roads
 
 For the purposes of coding, motor vehicles are not considered to
 include boats.
@@ -846,14 +846,14 @@ include boats.
 - (2) Present and widely used (At one time or another during the post-contact period, motor vehicles were used by a substantial proportion of the population.)
 - (?) Missing data
 
-### v80: Air travel
+### v76: Air travel
 
 - (0) Absent (At no time during the post-contact period did most members of the culture have access to an airport or airstrip.)
 - (1) Present, local only (At no time during the post-contact period did most members of the culture have access to international air travel, but at one time or another most members of the culture had access to domestic air travel.)
 - (2) Present and long-distance (At one time or another, most members of the culture had access to international air travel.)
 - (?) Missing data
 
-### v79: Sea port
+### v77: Sea port
 
 i.e. a wharf that can dock large foreign ships
 
@@ -861,14 +861,14 @@ i.e. a wharf that can dock large foreign ships
 - (1) Present (At one time or another during the post-contact period most members of the culture had access to a sea port.)
 - (?) Missing data
 
-### v69: Loss of autonomy during postcontact period
+### v78: Loss of autonomy during postcontact period
 
 - (1) Low (The cultural remained politically autonomous throughout the post-contact period.) (Skip to Q.71)
 - (2) Medium (The culture maintained some political autonomy throughout the post-contact period, but on at least one occasion during the post-contact period the culture entered into a political relationship with a foreign power that involved some loss of autonomy.)
 - (3) High (On at least one occasion during the post-contact period, the culture came under the political dominance of a foreign power, and this event resulted in considerable loss of autonomy.)
 - (?) Missing data
 
-### v70: Nature of loss of autonomy – voluntary vs. forced
+### v79: Nature of loss of autonomy – voluntary vs. forced
 
 Was autonomy ceded voluntarily or by force?    If autonomy was lost
 more than once and differing levels of force  were involved, please
@@ -881,14 +881,14 @@ code the highest level of force used.
 
 ## Current Culture
 
-### v88: Contemporary Time Focus
+### v80: Contemporary Time Focus
 
 The contemporary state coding sheet should describe the culture as it
 is at or around the time of coding. The time focus, then, should be as
 recent and narrow as is practical.    This can be stated in the form
 of a calendar year or an interval, e.g. (2000-2010).
 
-### v92: Syncretism – Unofficial
+### v81: Syncretism – Unofficial
 
 Syncretism, for our purposes, is the fusion of features from the
 indigenous religion of the culture with features from one or more
@@ -903,7 +903,7 @@ considered.
 - (3) High: (Most people do not draw a clear distinction between the indigenous religion the world religion, and combine indigenous and non-indigenous religious elements.)
 - (?) Missing data
 
-### v91: Religious Syncretism – Institutional
+### v82: Religious Syncretism – Institutional
 
 Syncretism, for our purposes, is the fusion of features from the
 indigenous religion of the culture with features from one or more
@@ -918,7 +918,7 @@ considered.
 - (3) High (A new religion has formed which incorporates concepts and / or practices from both the indigenous and foreign religions.)
 - (?) Missing data
 
-### v90: Dominant world religion
+### v83: Dominant world religion
 
 - (1) Christianity
 - (2) Islam
