@@ -1,4 +1,4 @@
-# Database of Austronesian Religions
+# Pulotu: Database of Austronesian Religions
 
 ## How to cite
 

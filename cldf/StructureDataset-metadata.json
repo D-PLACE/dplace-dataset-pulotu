@@ -11,13 +11,13 @@
     "dc:identifier": "https://pulotu.com",
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:source": "sources.bib",
-    "dc:title": "Database of Austronesian Religions",
+    "dc:title": "Pulotu: Database of Austronesian Religions",
     "dcat:accessURL": "https://github.com/D-PLACE/dplace-dataset-pulotu",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/D-PLACE/dplace-dataset-pulotu",
             "rdf:type": "prov:Entity",
-            "dc:created": "abb2211",
+            "dc:created": "cc4f5a0",
             "dc:title": "Repository"
         },
         {
