@@ -1,12 +1,12 @@
 <a name="ds-structuredatasetmetadatajson"> </a>
 
-# StructureDataset Database of Pacific Religions
+# StructureDataset Database of Austronesian Religions
 
 **CLDF Metadata**: [StructureDataset-metadata.json](./StructureDataset-metadata.json)
 
 **Sources**: [sources.bib](./sources.bib)
 
-Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices. You will find information on more than 130 cultures from the Moken of mainland Asia to the Maori of New Zealand.
+Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices. You will find information on more than 130 cultures from the Moken of mainland Asia to the Māori of New Zealand.
 
 property | value
  --- | ---
@@ -15,7 +15,7 @@ property | value
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://pulotu.com
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/D-PLACE/dplace-dataset-pulotu
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/D-PLACE/dplace-dataset-pulotu/tree/04e45df">D-PLACE/dplace-dataset-pulotu 04e45df</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.4">Glottolog v4.4</a></li><li><a href="https://github.com/D-PLACE/pulotu-internal/tree/f444283">D-PLACE/pulotu-internal f444283</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/D-PLACE/dplace-dataset-pulotu/tree/abb2211">D-PLACE/dplace-dataset-pulotu abb2211</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.4">Glottolog v4.4</a></li><li><a href="https://github.com/D-PLACE/pulotu-internal/tree/f444283">D-PLACE/pulotu-internal f444283</a></li></ol>
 [prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.8.10</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | pulotu
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution

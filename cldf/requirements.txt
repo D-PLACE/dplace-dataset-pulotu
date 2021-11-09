@@ -3,7 +3,7 @@ bs4==0.0.1
 certifi==2021.5.30
 chardet==4.0.0
 cldfbench==1.7.2
--e git+https://github.com/D-PLACE/dplace-dataset-pulotu@6122578be47864e3be3ece22ee83a1b3d7445246#egg=cldfbench_pulotu
+-e git+https://github.com/D-PLACE/dplace-dataset-pulotu@abb2211e88f3a69a03409f7c3bf1b428b16b67dc#egg=cldfbench_pulotu
 cldfcatalog==1.3.2
 clldutils==3.9.0
 colorlog==6.4.1

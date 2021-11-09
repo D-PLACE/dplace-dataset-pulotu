@@ -1,4 +1,4 @@
-# Database of Pacific Religions
+# Database of Austronesian Religions
 
 ## How to cite
 
@@ -10,7 +10,7 @@ If you use these data please cite
 ## Description
 
 
-Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices. You will find information on more than 130 cultures from the Moken of mainland Asia to the Maori of New Zealand.
+Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices. You will find information on more than 130 cultures from the Moken of mainland Asia to the Māori of New Zealand.
 
 This dataset is licensed under a CC-BY-4.0 license
 

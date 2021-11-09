@@ -25,6 +25,9 @@ QUESTIONS = {
     'Longitude of culture’s location': 'Longitude of culture’s location (°)',
     'Latitude of culture’s location': 'Latitude of culture’s location (°)',
 }
+CNAMES = {
+    'Maori': 'Māori',
+}
 
 CATEGORIES = [
     'Traditional Culture',
@@ -173,8 +176,8 @@ class Dataset(BaseDataset):
             c2id[r['id']] = r['slug']
             cultures[r['id']] = dict(
                 ID=r['slug'],
-                Name=r['culture'],
-                Comment=r['notes'],
+                Name=CNAMES.get(r['culture'], r['culture']),
+                Comment=r['notes'].replace('Maori', 'Māori'),
                 Glottocode=abvd2gc.get(c2abvd[r['id']]),
                 Ethonyms=split_text(r['ethonyms'], separators=';', strip=True),
                 # FIXME: Add Glottolog classification for navigation/searching?
