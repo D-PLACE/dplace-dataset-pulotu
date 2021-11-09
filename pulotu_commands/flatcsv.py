@@ -44,16 +44,7 @@ def run(args):
 
     codebook = [
         """# Pulotu Codebook 
-Updated:  30/6/2015 
-Pulotu:  Database of Austronesian Supernatural Belief and Practice 
-Authors:  Joseph Watts, Oliver Sheehan, Simon J. Greenhill, Stephanie Gomes-Ng, 
-Quentin D. Atkinson, Joseph Bulbulia and Russell D. Gray 
-Website: www.pulotu.com
 """,
-        #'## Section 1: Indigenous Time Focus'
-        #'### v1.Subdee',
-        # info
-        # ul of possible values
     ]
     codes = {
         pid: list(codes) for pid, codes in

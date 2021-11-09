@@ -258,8 +258,16 @@ class Dataset(BaseDataset):
                 ))
 
         args.writer.objects['LanguageTable'] = list(cultures.values())
-        args.writer.objects['ParameterTable'] = sorted(
-            args.writer.objects['ParameterTable'], key=parameter_sort)
+        shuffled = collections.OrderedDict()
+        for i, p in enumerate(
+                sorted(args.writer.objects['ParameterTable'], key=parameter_sort), start=1):
+            shuffled[p['ID']] = {k: str(i) if k == 'ID' else v for k, v in p.items()}
+
+        args.writer.objects['ParameterTable'] = shuffled.values()
+        shuffled = {k: v['ID'] for k, v in shuffled.items()}
+        for t in ['CodeTable', 'ValueTable']:
+            for o in args.writer.objects[t]:
+                o['Parameter_ID'] = shuffled[o['Parameter_ID']]
 
 
 VPK_2015 = {
