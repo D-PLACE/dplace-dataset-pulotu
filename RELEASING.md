@@ -18,7 +18,9 @@
    cldfbench zenodo cldfbench_pulotu.py --communities dplace
    ```
 5. Create flat CSV:
-   # FIXME
+   ```shell
+   cldfbench pulotu.flatcsv
+   ```
 6. Create the release commit:
    ```shell
    git commit -a -m "release <VERSION>"
