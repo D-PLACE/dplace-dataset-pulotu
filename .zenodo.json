@@ -17,12 +17,12 @@
     },
     "creators": [
         {
-            "name": "Oliver Sheehan",
-            "affiliation": "University of Auckland"
-        },
-        {
             "name": "Joseph Watts",
             "affiliation": "University of Otago"
+        },
+        {
+            "name": "Oliver Sheehan",
+            "affiliation": "University of Auckland"
         },
         {
             "name": "Simon Greenhill",

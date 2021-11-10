@@ -2,8 +2,8 @@
 
 Name | Affiliation | GitHub user | Description | Role
 --- | --- | --- | --- | ---
-Oliver Sheehan | University of Auckland | @olcsheehan | Oliver has played a central role in developing and coding the Pulotu database since its inception. In recent years Oliver had lead the ongoing development of the Pulotu database and is the current Chief Editor. Oliver is a postdoctoral researcher in the department of psychology at the University of Auckland. | Creator 
 Joseph Watts | University of Otago | @Joseph-Watts | Project management, database and website design; led the initial design and construction of Pulotu in collaboration with the rest of the project team. | Creator
+Oliver Sheehan | University of Auckland | @olcsheehan | Oliver has played a central role in developing and coding the Pulotu database since its inception. In recent years Oliver had lead the ongoing development of the Pulotu database and is the current Chief Editor. Oliver is a postdoctoral researcher in the department of psychology at the University of Auckland. | Creator 
 Simon Greenhill | Max Planck Institute for the Science of Human History | @SimonGreenhill | Associate Investigator, database design | Creator
 Stephanie Gomes-Ng | University of Auckland | | Cultural research and database development | Creator
 Quentin Atkinson | University of Auckland | | Associate Investigator, data analysis | Creator
