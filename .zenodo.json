@@ -1,0 +1,135 @@
+{
+    "communities": [
+        {
+            "identifier": "dplace"
+        }
+    ],
+    "title": "Pulotu: Database of Austronesian Religions",
+    "access_right": "open",
+    "keywords": [
+        "cldf:StructureDataset",
+        "linguistics"
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Watts J., Sheehan O., Greenhill S.J., Gomes-Ng S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database of Austronesian Supernatural Beliefs and Practices. PLoS ONE 10(9). DOI: https://doi.org/10.1371/journal.pone.0136783</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-4.0"
+    },
+    "creators": [
+        {
+            "name": "Oliver Sheehan",
+            "affiliation": "University of Auckland"
+        },
+        {
+            "name": "Joseph Watts",
+            "affiliation": "University of Otago"
+        },
+        {
+            "name": "Simon Greenhill",
+            "affiliation": "Max Planck Institute for the Science of Human History"
+        },
+        {
+            "name": "Stephanie Gomes-Ng",
+            "affiliation": "University of Auckland"
+        },
+        {
+            "name": "Quentin Atkinson",
+            "affiliation": "University of Auckland"
+        },
+        {
+            "name": "Joseph Bulbulia",
+            "affiliation": "Victoria University of Wellington"
+        },
+        {
+            "name": "Russell Gray",
+            "affiliation": "Max Planck Institute for Evolutionary Anthropology"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Carlos Botero",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Carlos Botero",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Angeline Song",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Angeline Song",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Joanne Ong",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Joanne Ong",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Sam Passmore",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Sam Passmore",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Kirsty Maurits",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Kirsty Maurits",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Goldie Hamilton",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Goldie Hamilton",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Kelsey Buntain",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Kelsey Buntain",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Alex Thomson",
+            "affiliation": "",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Alex Thomson",
+            "affiliation": "",
+            "type": "Researcher"
+        },
+        {
+            "name": "Robert Forkel",
+            "affiliation": "Max Planck Institute for Evolutionary Anthropology",
+            "type": "DataCurator"
+        }
+    ]
+}
