@@ -106,6 +106,31 @@ class Dataset(BaseDataset):
         for row in (d or self.raw_dir.joinpath('pulotu-internal')).read_csv(name, dicts=True):
             yield collections.OrderedDict((k, v.strip()) for k, v in row.items())
 
+    def _make_param(self, r, sections, codes, codetable):
+        name = r['question'].strip()
+        p = dict(
+            ID=r['id'],
+            Name=QUESTIONS.get(name, name),
+            Simplified_Name=r['simplified_question'],
+            Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
+            Section_Notes=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
+            Datatype=r['response_type'] if r['id'] != '10' else 'Int',
+            Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
+            Section=sections[r['subsection_id']]['section'],
+            Subsection=sections[r['section_id']]['section'],
+        )
+        if r['id'] in codes:
+            for k, v in codes[r['id']].items():
+                for s in STRIP_FROM_CODES:
+                    v = v.replace(s, '').strip()
+                codetable.append(dict(
+                    ID='{}-{}'.format(r['id'], k.replace('?', 'NA')),
+                    Parameter_ID=r['id'],
+                    Name=k,
+                    Description=v,
+                ))
+        return p
+
     def cmd_makecldf(self, args):
         args.writer.cldf.add_columns(
             'LanguageTable',
@@ -190,32 +215,31 @@ class Dataset(BaseDataset):
             for k, v in zip(opts[1::2], opts[::2][1:]):
                 codes[r['question_ptr_id']][k[1:-1]] = v.strip()
 
-        public_questions = {}
+        public_questions, with_codersnotes = {}, set()
+        parameters = []
         for r in self.read('questions.csv'):
             if r['displayPublic'] != 't':
                 public_questions[r['id']] = r['response_type']
-                name = r['question'].strip()
-                args.writer.objects['ParameterTable'].append(dict(
-                    ID=r['id'],
-                    Name=QUESTIONS.get(name, name),
-                    Simplified_Name=r['simplified_question'],
-                    Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
-                    Section_Notes=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
-                    Datatype=r['response_type'] if r['id'] != '10' else 'Int',
-                    Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
-                    Section=sections[r['subsection_id']]['section'],
-                    Subsection=sections[r['section_id']]['section'],
-                ))
-                if r['id'] in codes:
-                    for k, v in codes[r['id']].items():
-                        for s in STRIP_FROM_CODES:
-                            v = v.replace(s, '').strip()
-                        args.writer.objects['CodeTable'].append(dict(
-                            ID='{}-{}'.format(r['id'], k.replace('?', 'NA')),
-                            Parameter_ID=r['id'],
-                            Name=k,
-                            Description=v,
-                        ))
+                parameters.append(
+                    self._make_param(r, sections, codes, args.writer.objects['CodeTable']))
+        shuffled = collections.OrderedDict()
+        for i, p in enumerate(
+                sorted(parameters, key=parameter_sort), start=1):
+            shuffled[p['ID']] = {k: str(i) if k == 'ID' else v for k, v in p.items()}
+        args.writer.objects['ParameterTable'] = list(shuffled.values())
+        shuffled = {k: v['ID'] for k, v in shuffled.items()}
+
+        max_pid = len(parameters)
+        for r in self.read('questions.csv'):
+            if r['number'] in ['251', '252', '253']:
+                assert r['id'] not in public_questions
+                with_codersnotes.add(r['id'])
+                max_pid += 1
+                shuffled[r['id']] = str(max_pid)
+                public_questions[r['id']] = r['response_type']
+                p = self._make_param(r, sections, codes, args.writer.objects['CodeTable'])
+                p['ID'] = str(max_pid)
+                args.writer.objects['ParameterTable'].append(p)
 
         responses = collections.defaultdict(dict)
         for label, t in [('options', 'Option'), ('floats', 'Float'), ('integers', 'Int'), ('texts', 'Text')]:
@@ -253,18 +277,10 @@ class Dataset(BaseDataset):
                     Source=sources,
                     # Uncertainty is not really informative or useful.
                     #Uncertain=r['uncertainty'] == 't',
-                    # Coder's notes are typically informal, not meant for public release.
-                    #Comment=r['codersnotes'],
+                    Comment=r['codersnotes'] if r['question_id'] in with_codersnotes else None,
                 ))
 
         args.writer.objects['LanguageTable'] = list(cultures.values())
-        shuffled = collections.OrderedDict()
-        for i, p in enumerate(
-                sorted(args.writer.objects['ParameterTable'], key=parameter_sort), start=1):
-            shuffled[p['ID']] = {k: str(i) if k == 'ID' else v for k, v in p.items()}
-
-        args.writer.objects['ParameterTable'] = shuffled.values()
-        shuffled = {k: v['ID'] for k, v in shuffled.items()}
         for t in ['CodeTable', 'ValueTable']:
             for o in args.writer.objects[t]:
                 o['Parameter_ID'] = shuffled[o['Parameter_ID']]

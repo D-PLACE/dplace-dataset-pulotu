@@ -925,3 +925,44 @@ considered.
 - (3) Hinduism / Buddhism
 - (4) Other (Please specify in Coder’s Notes)
 - (?) Missing data
+
+## Traditional Culture
+
+### v84: Religious Authority
+
+Religious authority is defined as a right to manage interactions
+between living human beings and supernatural agents or powers, vested
+in a specific office and exercised over a specific group of people. If
+religious authority is present at multiple levels, the highest level
+is to be coded.
+
+- (0) Absent, or restricted to a group no larger than the household
+- (1) Sublocal (encompasses a group larger than the household but smaller than the local community)
+- (2) Local (encompasses the local community and / or multiple sublocal groups)
+- (3) Supralocal (encompasses multiple local groups)
+- (?) Missing data
+
+### v85: Structure of Religious and Political Authority
+
+This variable represents the extent to which religious and political
+authority are combined or separate at the highest level at which they
+are present.
+
+- (0) Absent (Religious and / or political authority not present)
+- (1) Combined (Supreme religious and political authority are vested in the same office or offices)
+- (2) Partly independent (Supreme religious and political authority are (a) incompletely partitioned between different offices, e.g. supreme religious authority is vested in one office and supreme political authority is shared between this office and other, or (b) are vested in different offices that are part of the same hierarchy)
+- (3) Independent (Supreme religious and political authority are vested in different offices that are not part of the same hierarchy)
+- (?) Missing data
+
+### v86: Political Authority
+
+Political authority is defined as a right to manage interactions
+between living human beings, vested in a specific office and exercised
+over a specific group of people. If political authority is present at
+multiple levels, the highest level is to be coded.
+
+- (0) Absent, or restricted to a group no larger than the household
+- (1) Sublocal (encompasses a group larger than the household but smaller than the local community)
+- (2) Local (encompasses the local community and / or multiple sublocal groups)
+- (3) Supralocal (encompasses multiple local groups)
+- (?) Missing data

@@ -22,7 +22,3 @@ Available online at https://pulotu.com
 The following CLDF datasets are available in [cldf](cldf):
 
 - CLDF [StructureDataset](https://github.com/cldf/cldf/tree/master/modules/StructureDataset) at [cldf/StructureDataset-metadata.json](cldf/StructureDataset-metadata.json)
-
-Additionally, the core data is available as single, tab-delimited CSV file,
-see [dist](dist).
-
