@@ -53,7 +53,10 @@ of the variables follows below.
     codes = {
         pid: list(codes) for pid, codes in
         itertools.groupby(cldf['CodeTable'], lambda r: r['Parameter_ID'])}
-    for cat, ps in itertools.groupby(cldf['ParameterTable'], lambda r: r['Category']):
+    for cat, ps in itertools.groupby(
+        sorted(cldf['ParameterTable'], key=lambda r: (r['Category'], int(r['ID']))),
+        lambda r: r['Category']
+    ):
         codebook.extend(['', '## {}'.format(cat)])
         for p in ps:
             codebook.extend(['', '### v{}: {}'.format(p['ID'], p['Name'])])

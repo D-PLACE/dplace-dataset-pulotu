@@ -6,6 +6,226 @@ of the variables follows below.
 
 
 
+## Current Culture
+
+### v80: Contemporary Time Focus
+
+The contemporary state coding sheet should describe the culture as it
+is at or around the time of coding. The time focus, then, should be as
+recent and narrow as is practical.    This can be stated in the form
+of a calendar year or an interval, e.g. (2000-2010).
+
+### v81: Syncretism – Unofficial
+
+Syncretism, for our purposes, is the fusion of features from the
+indigenous religion of the culture with features from one or more
+world religions.  Unofficial syncretism is syncretic belief and / or
+practice that occurs outside of a religious institution and is not
+explicitly endorsed by that institution. Only syncretic beliefs and /
+or practices that survived to the present day or recent past should be
+considered.
+
+- (1) Low (Most people draw a clear distinction between the indigenous religion and the world religion (s), and do not combine indigenous and non-indigenous religious elements.)
+- (2) Medium (Most people draw a clear distinction between the indigenous religion and the world religion (s), but combine indigenous and non-indigenous religious elements.)
+- (3) High: (Most people do not draw a clear distinction between the indigenous religion the world religion, and combine indigenous and non-indigenous religious elements.)
+- (?) Missing data
+
+### v82: Religious Syncretism – Institutional
+
+Syncretism, for our purposes, is the fusion of features from the
+indigenous religion of the culture with features from one or more
+world religions.  Institutional syncretism is syncretic belief and /
+or practice that occurs within or is explicitly endorsed by a
+religious institution, e.g. a church.. Only syncretic beliefs and / or
+practices that survived to the present day or recent past should be
+considered.
+
+- (1) Low (The indigenous and world religion (s) have borrowed little from one another.)
+- (2) Medium (The indigenous and world religion(s) have remained distinct, but one or both has borrowed substantially from the other.)
+- (3) High (A new religion has formed which incorporates concepts and / or practices from both the indigenous and foreign religions.)
+- (?) Missing data
+
+### v83: Dominant world religion
+
+- (1) Christianity
+- (2) Islam
+- (3) Hinduism / Buddhism
+- (4) Other (Please specify in Coder’s Notes)
+- (?) Missing data
+
+## Post Contact History
+
+### v64: Was a foreign religion adopted through a top-down (those high in the social hierarchy converted first, followed by the general population) or a bottom-up (the general population converted first, followed by those high in the social hierarchy) process?
+
+Please provide a brief description in the Coder's Notes section.
+
+- (1) Primarily a top-down process.
+- (2) Primarily a top-down process, although inroads had already been made with the general population.
+- (3) Mixed / Neither (e.g. Both high-status individuals and the general population converted at the same time, or the religion was adopted through a mixture of top-down and bottom-up processes.)
+- (4) Primarily a bottom-up process, although those in power showed little or no reluctance.
+- (5) Primarily a bottom-up process.
+- (?) Missing data
+
+### v65: Use of force in conversion
+
+Was a religion imposed on the culture by a colonial government /
+external cultural body?    If more than one conversion took place
+involving varying levels of force, please code the highest level of
+force used.    Please provide a brief description (including religion,
+nature of imposition, and outcome of imposition) in the Coder's Notes
+section.
+
+- (0) Low (most communities adopted the new religion either voluntarily or due to pressure from other communities of the same culture)
+- (1) Medium (e.g  force was threatened or implied during  the conversion process;  some communities agreed to conversion but others were forced to convert)
+- (2) High (most communities were forced to convert)
+- (?) Missing data
+
+### v66: Adoption of a world religion
+
+Did a substantial proportion of the indigenous population adopt a
+world religion?    Please provide a brief description (including
+religion/s and time period when conversion took place) in the Coder's
+Notes section.
+
+- (0) Absent or minimal (At no time during the post-contact period did more than 5% of the indigenous population practice a world religion.) (Skip to Q.87)
+- (1) Present but minor (At one time or another during the post-contact period more than 5% of the indigenous population practiced a world religion, but this figure never exceeded 25%.)
+- (2) Present and major (At one time or another during the post-contact period more than 25% of the indigenous population practiced a world religion, but this figure never exceeded 75%.)
+- (3) Present and predominant (At one time or another during the post-contact period, at least 75% of the indigenous population practiced a world religion.)
+- (?) Missing data
+
+### v67: Resident missionary involvement in conversion process
+
+Did resident foreign missionaries play a significant role in the
+conversion process?    Please provide a brief description (including
+year of arrival, nationality of missionaries, religion and
+denomination of missionaries) in the Coder's Notes section.
+
+- (0) Absent (Resident foreign missionaries played no role, or only a minimal role, in the conversion process.)
+- (1) Present, and from Austronesian societies only (Resident foreign missionaries played an important role in the conversion process, but these missionaries were from other Austronesian societies only.)
+- (2) Present, and from non-Austronesian societies (Resident foreign missionaries, at least one of whom was from a non-Austronesian society, played an important role in the conversion process.)
+- (?) Missing data
+
+### v68: Syncretic religious movements
+
+A syncretic religious movement, for the purposes of coding, is an
+organised religious group that integrates features of an indigenous
+religion and one or more world religions. Please provide details of
+any syncretic religious movements in the Coder’s Notes section.
+
+- (0) Absent
+- (1) Present, but did not survive to the present-day
+- (2) Present, and survived to the present day
+- (?) Missing data
+
+### v69: Replacement-level immigration
+
+Replacement-level immigration, for the purposes of coding, is
+migration of people from non-indigenous cultures (i.e. cultures that
+were not originally present in the area) into the ancestral territory
+of the culture being coded, at such a level that the cultural
+demographics of the area were changed substantially. “Immigrant
+population”, in this case, refers both to immigrants from another
+culture and to their descendants, but excludes those who became
+absorbed into the indigenous population through intermarriage or
+acculturation.
+
+- (0) Absent (Replacement-level immigration did not occur – an immigrant culture was never present in the area, or was present but had a population size less than 10% of that of the indigenous culture.)
+- (1) Low (Replacement-level immigration occurred. The immigrant culture had a population size more than 10% of that of the indigenous culture at one time or another, but this figure never exceeded 50%.)
+- (2) Medium (Replacement-level immigration occurred. The immigrant culture had a population size more than 50% of that of the indigenous population at one time or another, but this figure never exceeded 100%.)
+- (3) High (Replacement-level immigration occurred. At one time or another during the post-contact period the immigrant culture had a population size more than 100% of that of the indigenous population.)
+- (?) Missing data
+
+### v70: Language shift
+
+- (1) Low (The indigenous language remained the sole or primary means of communication for most of the indigenous population for the duration of the post-contact period.)
+- (2) Medium (The indigenous language remained an important means of communication for the duration of the post-contact period, but at one time or another the indigenous population used a non-indigenous language to roughly the same extent.)
+- (3) High (At one time or another during the post-contact period, a foreign language became the sole or primary means of communication for most of the indigenous population.)
+- (?) Missing data
+
+### v71: Foreign education systems
+
+i.e. education systems not indigenous to the culture
+
+- (1) Low (At no time during the post-contact period did more than 25% of indigenous children receive a basic non-indigenous education.)
+- (2) Medium (At one time or another during the post-contact period over 25% of indigenous children received at least a basic non-indigenous education, but this figure never exceeded 75%.)
+- (3) High (At one time or another during the post-contact period over 75% of children received some at least a basic non-indigenous education.)
+- (?) Missing data
+
+### v72: Foreign government systems
+
+A foreign government system need not imply political dominance by
+foreigners. A country may be politically independent and be governed
+by indigenous people, but have a system of government that is of
+foreign origin.
+
+- (0) Absent (At no time during the post-contact period was the culture subject to a foreign government system.)
+- (1) Present, but of low importance (At one time or another during the post-contact period, the culture was subject to a foreign government system, but this government system never controlled most important decisions.)
+- (2) Present, and of high importance (At one time or another during the post-contact period the culture was subject to a foreign government system that controlled most important decisions.)
+- (?) Missing data
+
+### v73: Changes in means of subsistence
+
+Means of subsistence can incorporate new features (e.g. new
+technologies) without being fundamentally changed.
+
+- (1) Low (Principal and major means of subsistence have not changed from their indigenous states.)
+- (2) Medium (Principal and major means of subsistence have changed from their indigenous states (e.g. through gain or loss of major and / or principal means of subsistence), but at least one of the major or principal means of subsistance has persisted.)
+- (3) High (No indigenous means of subsistence has remained major or principal.)
+- (?) Missing data
+
+### v74: Exportation of goods to other cultures
+
+Please provide a brief description of major trading partners and types
+of goods traded in the Coder's Notes section.
+
+- (0) Absent (Exports were never part of the local economy.)
+- (1) Present but minor (At one time or another exports were part of the local economy, but were never a primary focus of economic activity for more than 10% of the population .)
+- (2) Present and substantial (At one time or another during the post-contact period, exports were a primary focus of economic activity for over 10% of the population.)
+- (?) Missing data
+
+### v75: Vehicles and roads
+
+For the purposes of coding, motor vehicles are not considered to
+include boats.
+
+- (0) Absent (At no time during the post-contact period did most members of the culture have access either to roads or motor vehicles.)
+- (1) Present but rarely used (At no time during the post-contact period were motor vehicles used by a substantial portion of the population, but at one time or another most members of population had access to roads suitable for motor vehicles.)
+- (2) Present and widely used (At one time or another during the post-contact period, motor vehicles were used by a substantial proportion of the population.)
+- (?) Missing data
+
+### v76: Air travel
+
+- (0) Absent (At no time during the post-contact period did most members of the culture have access to an airport or airstrip.)
+- (1) Present, local only (At no time during the post-contact period did most members of the culture have access to international air travel, but at one time or another most members of the culture had access to domestic air travel.)
+- (2) Present and long-distance (At one time or another, most members of the culture had access to international air travel.)
+- (?) Missing data
+
+### v77: Sea port
+
+i.e. a wharf that can dock large foreign ships
+
+- (0) Absent (At no time during the post-contact period did most members of the culture have access to a sea port.)
+- (1) Present (At one time or another during the post-contact period most members of the culture had access to a sea port.)
+- (?) Missing data
+
+### v78: Loss of autonomy during postcontact period
+
+- (1) Low (The cultural remained politically autonomous throughout the post-contact period.) (Skip to Q.71)
+- (2) Medium (The culture maintained some political autonomy throughout the post-contact period, but on at least one occasion during the post-contact period the culture entered into a political relationship with a foreign power that involved some loss of autonomy.)
+- (3) High (On at least one occasion during the post-contact period, the culture came under the political dominance of a foreign power, and this event resulted in considerable loss of autonomy.)
+- (?) Missing data
+
+### v79: Nature of loss of autonomy – voluntary vs. forced
+
+Was autonomy ceded voluntarily or by force?    If autonomy was lost
+more than once and differing levels of force  were involved, please
+code the highest level of force used.
+
+- (0) Largely voluntary (Autonomy was ceded either voluntarily or as a result of pressure from other members of the same culture, without the threat of external force being necessary.)
+- (1) Partly voluntary (e.g. Autonomy was ceded voluntarily but under duress; some communities ceded their autonomy voluntarily but others were forced to do so by an foreign power.)
+- (2) Largely involuntary (autonomy was lost largely as a result of external force)
+- (?) Missing data
+
 ## Traditional Culture
 
 ### v1: Traditional State Time Focus
@@ -209,8 +429,8 @@ Please provide a brief description in the Coder's Notes section.
 
 ### v18: Mana related to social influence or technical skill
 
-e.g.  mana means “prestige”  Please provide a brief description in the
-Coder's Notes section.
+e.g.  mana means “prestige”    Please provide a brief description in
+the Coder's Notes section.
 
 - (0) Absent
 - (1) Present
@@ -238,7 +458,7 @@ description in the Coder's Notes section.
 
 ### v21: Mana as a spiritual or religious concept
 
-e.g. mana means “favoured by the gods”.  Please provide a brief
+e.g. mana means “favoured by the gods”.    Please provide a brief
 description in the Coder's Notes section.
 
 - (0) Absent
@@ -448,7 +668,7 @@ Coder's Notes section.
 ### v42: Scarification
 
 Scarification must involve deliberately inflicted permanent scarring,
-not superficial cutting.  Please provide a brief description (age,
+not superficial cutting.    Please provide a brief description (age,
 gender, context) in the Coder's Notes section.
 
 - (0) Absent from culture
@@ -705,228 +925,6 @@ individuals, but deepwater fishing usually requires a group approach.
 - (3) Major
 - (4) Principal
 - (?) Missing data
-
-## Post Contact History
-
-### v64: Was a foreign religion adopted through a top-down (those high in the social hierarchy converted first, followed by the general population) or a bottom-up (the general population converted first, followed by those high in the social hierarchy) process?
-
-Please provide a brief description in the Coder's Notes section.
-
-- (1) Primarily a top-down process.
-- (2) Primarily a top-down process, although inroads had already been made with the general population.
-- (3) Mixed / Neither (e.g. Both high-status individuals and the general population converted at the same time, or the religion was adopted through a mixture of top-down and bottom-up processes.)
-- (4) Primarily a bottom-up process, although those in power showed little or no reluctance.
-- (5) Primarily a bottom-up process.
-- (?) Missing data
-
-### v65: Use of force in conversion
-
-Was a religion imposed on the culture by a colonial government /
-external cultural body?  If more than one conversion took place
-involving varying levels of force, please code the highest level of
-force used.  Please provide a brief description (including religion,
-nature of imposition, and outcome of imposition) in the Coder's Notes
-section.
-
-- (0) Low (most communities adopted the new religion either voluntarily or due to pressure from other communities of the same culture)
-- (1) Medium (e.g  force was threatened or implied during  the conversion process;  some communities agreed to conversion but others were forced to convert)
-- (2) High (most communities were forced to convert)
-- (?) Missing data
-
-### v66: Adoption of a world religion
-
-Did a substantial proportion of the indigenous population adopt a
-world religion?    Please provide a brief description (including
-religion/s and time period when conversion took place) in the Coder's
-Notes section.
-
-- (0) Absent or minimal (At no time during the post-contact period did more than 5% of the indigenous population practice a world religion.) (Skip to Q.87)
-- (1) Present but minor (At one time or another during the post-contact period more than 5% of the indigenous population practiced a world religion, but this figure never exceeded 25%.)
-- (2) Present and major (At one time or another during the post-contact period more than 25% of the indigenous population practiced a world religion, but this figure never exceeded 75%.)
-- (3) Present and predominant (At one time or another during the post-contact period, at least 75% of the indigenous population practiced a world religion.)
-- (?) Missing data
-
-### v67: Resident missionary involvement in conversion process
-
-Did resident foreign missionaries play a significant role in the
-conversion process?    Please provide a brief description (including
-year of arrival, nationality of missionaries, religion and
-denomination of missionaries) in the Coder's Notes section.
-
-- (0) Absent (Resident foreign missionaries played no role, or only a minimal role, in the conversion process.)
-- (1) Present, and from Austronesian societies only (Resident foreign missionaries played an important role in the conversion process, but these missionaries were from other Austronesian societies only.)
-- (2) Present, and from non-Austronesian societies (Resident foreign missionaries, at least one of whom was from a non-Austronesian society, played an important role in the conversion process.)
-- (?) Missing data
-
-### v68: Syncretic religious movements
-
-A syncretic religious movement, for the purposes of coding, is an
-organised religious group that integrates features of an indigenous
-religion and one or more world religions. Please provide details of
-any syncretic religious movements in the Coder’s Notes section.
-
-- (0) Absent
-- (1) Present, but did not survive to the present-day
-- (2) Present, and survived to the present day
-- (?) Missing data
-
-### v69: Replacement-level immigration
-
-Replacement-level immigration, for the purposes of coding, is
-migration of people from non-indigenous cultures (i.e. cultures that
-were not originally present in the area) into the ancestral territory
-of the culture being coded, at such a level that the cultural
-demographics of the area were changed substantially. “Immigrant
-population”, in this case, refers both to immigrants from another
-culture and to their descendants, but excludes those who became
-absorbed into the indigenous population through intermarriage or
-acculturation.
-
-- (0) Absent (Replacement-level immigration did not occur – an immigrant culture was never present in the area, or was present but had a population size less than 10% of that of the indigenous culture.)
-- (1) Low (Replacement-level immigration occurred. The immigrant culture had a population size more than 10% of that of the indigenous culture at one time or another, but this figure never exceeded 50%.)
-- (2) Medium (Replacement-level immigration occurred. The immigrant culture had a population size more than 50% of that of the indigenous population at one time or another, but this figure never exceeded 100%.)
-- (3) High (Replacement-level immigration occurred. At one time or another during the post-contact period the immigrant culture had a population size more than 100% of that of the indigenous population.)
-- (?) Missing data
-
-### v70: Language shift
-
-- (1) Low (The indigenous language remained the sole or primary means of communication for most of the indigenous population for the duration of the post-contact period.)
-- (2) Medium (The indigenous language remained an important means of communication for the duration of the post-contact period, but at one time or another the indigenous population used a non-indigenous language to roughly the same extent.)
-- (3) High (At one time or another during the post-contact period, a foreign language became the sole or primary means of communication for most of the indigenous population.)
-- (?) Missing data
-
-### v71: Foreign education systems
-
-i.e. education systems not indigenous to the culture
-
-- (1) Low (At no time during the post-contact period did more than 25% of indigenous children receive a basic non-indigenous education.)
-- (2) Medium (At one time or another during the post-contact period over 25% of indigenous children received at least a basic non-indigenous education, but this figure never exceeded 75%.)
-- (3) High (At one time or another during the post-contact period over 75% of children received some at least a basic non-indigenous education.)
-- (?) Missing data
-
-### v72: Foreign government systems
-
-A foreign government system need not imply political dominance by
-foreigners. A country may be politically independent and be governed
-by indigenous people, but have a system of government that is of
-foreign origin.
-
-- (0) Absent (At no time during the post-contact period was the culture subject to a foreign government system.)
-- (1) Present, but of low importance (At one time or another during the post-contact period, the culture was subject to a foreign government system, but this government system never controlled most important decisions.)
-- (2) Present, and of high importance (At one time or another during the post-contact period the culture was subject to a foreign government system that controlled most important decisions.)
-- (?) Missing data
-
-### v73: Changes in means of subsistence
-
-Means of subsistence can incorporate new features (e.g. new
-technologies) without being fundamentally changed.
-
-- (1) Low (Principal and major means of subsistence have not changed from their indigenous states.)
-- (2) Medium (Principal and major means of subsistence have changed from their indigenous states (e.g. through gain or loss of major and / or principal means of subsistence), but at least one of the major or principal means of subsistance has persisted.)
-- (3) High (No indigenous means of subsistence has remained major or principal.)
-- (?) Missing data
-
-### v74: Exportation of goods to other cultures
-
-Please provide a brief description of major trading partners and types
-of goods traded in the Coder's Notes section.
-
-- (0) Absent (Exports were never part of the local economy.)
-- (1) Present but minor (At one time or another exports were part of the local economy, but were never a primary focus of economic activity for more than 10% of the population .)
-- (2) Present and substantial (At one time or another during the post-contact period, exports were a primary focus of economic activity for over 10% of the population.)
-- (?) Missing data
-
-### v75: Vehicles and roads
-
-For the purposes of coding, motor vehicles are not considered to
-include boats.
-
-- (0) Absent (At no time during the post-contact period did most members of the culture have access either to roads or motor vehicles.)
-- (1) Present but rarely used (At no time during the post-contact period were motor vehicles used by a substantial portion of the population, but at one time or another most members of population had access to roads suitable for motor vehicles.)
-- (2) Present and widely used (At one time or another during the post-contact period, motor vehicles were used by a substantial proportion of the population.)
-- (?) Missing data
-
-### v76: Air travel
-
-- (0) Absent (At no time during the post-contact period did most members of the culture have access to an airport or airstrip.)
-- (1) Present, local only (At no time during the post-contact period did most members of the culture have access to international air travel, but at one time or another most members of the culture had access to domestic air travel.)
-- (2) Present and long-distance (At one time or another, most members of the culture had access to international air travel.)
-- (?) Missing data
-
-### v77: Sea port
-
-i.e. a wharf that can dock large foreign ships
-
-- (0) Absent (At no time during the post-contact period did most members of the culture have access to a sea port.)
-- (1) Present (At one time or another during the post-contact period most members of the culture had access to a sea port.)
-- (?) Missing data
-
-### v78: Loss of autonomy during postcontact period
-
-- (1) Low (The cultural remained politically autonomous throughout the post-contact period.) (Skip to Q.71)
-- (2) Medium (The culture maintained some political autonomy throughout the post-contact period, but on at least one occasion during the post-contact period the culture entered into a political relationship with a foreign power that involved some loss of autonomy.)
-- (3) High (On at least one occasion during the post-contact period, the culture came under the political dominance of a foreign power, and this event resulted in considerable loss of autonomy.)
-- (?) Missing data
-
-### v79: Nature of loss of autonomy – voluntary vs. forced
-
-Was autonomy ceded voluntarily or by force?    If autonomy was lost
-more than once and differing levels of force  were involved, please
-code the highest level of force used.
-
-- (0) Largely voluntary (Autonomy was ceded either voluntarily or as a result of pressure from other members of the same culture, without the threat of external force being necessary.)
-- (1) Partly voluntary (e.g. Autonomy was ceded voluntarily but under duress; some communities ceded their autonomy voluntarily but others were forced to do so by an foreign power.)
-- (2) Largely involuntary (autonomy was lost largely as a result of external force)
-- (?) Missing data
-
-## Current Culture
-
-### v80: Contemporary Time Focus
-
-The contemporary state coding sheet should describe the culture as it
-is at or around the time of coding. The time focus, then, should be as
-recent and narrow as is practical.    This can be stated in the form
-of a calendar year or an interval, e.g. (2000-2010).
-
-### v81: Syncretism – Unofficial
-
-Syncretism, for our purposes, is the fusion of features from the
-indigenous religion of the culture with features from one or more
-world religions.  Unofficial syncretism is syncretic belief and / or
-practice that occurs outside of a religious institution and is not
-explicitly endorsed by that institution. Only syncretic beliefs and /
-or practices that survived to the present day or recent past should be
-considered.
-
-- (1) Low (Most people draw a clear distinction between the indigenous religion and the world religion (s), and do not combine indigenous and non-indigenous religious elements.)
-- (2) Medium (Most people draw a clear distinction between the indigenous religion and the world religion (s), but combine indigenous and non-indigenous religious elements.)
-- (3) High: (Most people do not draw a clear distinction between the indigenous religion the world religion, and combine indigenous and non-indigenous religious elements.)
-- (?) Missing data
-
-### v82: Religious Syncretism – Institutional
-
-Syncretism, for our purposes, is the fusion of features from the
-indigenous religion of the culture with features from one or more
-world religions.  Institutional syncretism is syncretic belief and /
-or practice that occurs within or is explicitly endorsed by a
-religious institution, e.g. a church.. Only syncretic beliefs and / or
-practices that survived to the present day or recent past should be
-considered.
-
-- (1) Low (The indigenous and world religion (s) have borrowed little from one another.)
-- (2) Medium (The indigenous and world religion(s) have remained distinct, but one or both has borrowed substantially from the other.)
-- (3) High (A new religion has formed which incorporates concepts and / or practices from both the indigenous and foreign religions.)
-- (?) Missing data
-
-### v83: Dominant world religion
-
-- (1) Christianity
-- (2) Islam
-- (3) Hinduism / Buddhism
-- (4) Other (Please specify in Coder’s Notes)
-- (?) Missing data
-
-## Traditional Culture
 
 ### v84: Religious Authority
 
