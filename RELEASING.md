@@ -20,15 +20,15 @@
    ```shell
    cldfbench pulotu.flatcsv
    ```
-6. Create the release commit:
+6. Update `CHANGELOG.md`
+7. Create the release commit:
    ```shell
    git commit -a -m "release <VERSION>"
    ```
-7. Create a release tag:
+8. Create a release tag:
    ```
    git tag -a v<VERSION> -m"<VERSION> release"
    ```
-8. Create a release from this tag on https://github.com/D-PLACE/dplace-dataset-pulotu/releases
-9. Verify that data and metadata has been picked up by Zenodo correctly,
-   and copy the citation information into the GitHub release description.
-
+9. Create a release from this tag on https://github.com/D-PLACE/dplace-dataset-pulotu/releases
+10. Verify that data and metadata has been picked up by Zenodo correctly,
+    and copy the citation information into the GitHub release description.
