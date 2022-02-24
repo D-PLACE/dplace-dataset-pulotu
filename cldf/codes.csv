@@ -257,3 +257,15 @@ ID,Parameter_ID,Name,Description
 16-2,53,2,"Common, at least every five years"
 16-3,53,3,"Occasional, at least every generation"
 16-4,53,4,Rare or never
+149-0,84,0,"Absent, or restricted to a group no larger than the household"
+149-1,84,1,Sublocal (encompasses a group larger than the household but smaller than the local community)
+149-2,84,2,Local (encompasses the local community and / or multiple sublocal groups)
+149-3,84,3,Supralocal (encompasses multiple local groups)
+151-0,85,0,Absent (Religious and / or political authority not present)
+151-1,85,1,Combined (Supreme religious and political authority are vested in the same office or offices)
+151-2,85,2,"Partly independent (Supreme religious and political authority are (a) incompletely partitioned between different offices, e.g. supreme religious authority is vested in one office and supreme political authority is shared between this office and other, or (b) are vested in different offices that are part of the same hierarchy)"
+151-3,85,3,Independent (Supreme religious and political authority are vested in different offices that are not part of the same hierarchy)
+150-0,86,0,"Absent, or restricted to a group no larger than the household"
+150-1,86,1,Sublocal (encompasses a group larger than the household but smaller than the local community)
+150-2,86,2,Local (encompasses the local community and / or multiple sublocal groups)
+150-3,86,3,Supralocal (encompasses multiple local groups)

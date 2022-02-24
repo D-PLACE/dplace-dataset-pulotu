@@ -17,13 +17,13 @@
         {
             "rdf:about": "https://github.com/D-PLACE/dplace-dataset-pulotu",
             "rdf:type": "prov:Entity",
-            "dc:created": "693bc6e",
+            "dc:created": "v1.1-6-g1dbb124",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4",
+            "dc:created": "v4.5",
             "dc:title": "Glottolog"
         },
         {
@@ -51,7 +51,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 9793,
+            "dc:extent": 10160,
             "tableSchema": {
                 "columns": [
                     {
@@ -232,7 +232,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 83,
+            "dc:extent": 86,
             "tableSchema": {
                 "columns": [
                     {
@@ -289,7 +289,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CodeTable",
-            "dc:extent": 258,
+            "dc:extent": 270,
             "tableSchema": {
                 "columns": [
                     {

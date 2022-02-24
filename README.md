@@ -25,4 +25,3 @@ The following CLDF datasets are available in [cldf](cldf):
 
 Additionally, the core data is available as single, tab-delimited CSV file,
 see [dist](dist).
-
