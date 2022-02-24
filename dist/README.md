@@ -69,9 +69,9 @@ Please provide a brief description in the Coder's Notes section.
 ### v65: Use of force in conversion
 
 Was a religion imposed on the culture by a colonial government /
-external cultural body?    If more than one conversion took place
+external cultural body?  If more than one conversion took place
 involving varying levels of force, please code the highest level of
-force used.    Please provide a brief description (including religion,
+force used.  Please provide a brief description (including religion,
 nature of imposition, and outcome of imposition) in the Coder's Notes
 section.
 
@@ -429,8 +429,8 @@ Please provide a brief description in the Coder's Notes section.
 
 ### v18: Mana related to social influence or technical skill
 
-e.g.  mana means “prestige”    Please provide a brief description in
-the Coder's Notes section.
+e.g.  mana means “prestige”  Please provide a brief description in the
+Coder's Notes section.
 
 - (0) Absent
 - (1) Present
@@ -458,7 +458,7 @@ description in the Coder's Notes section.
 
 ### v21: Mana as a spiritual or religious concept
 
-e.g. mana means “favoured by the gods”.    Please provide a brief
+e.g. mana means “favoured by the gods”.  Please provide a brief
 description in the Coder's Notes section.
 
 - (0) Absent
@@ -668,7 +668,7 @@ Coder's Notes section.
 ### v42: Scarification
 
 Scarification must involve deliberately inflicted permanent scarring,
-not superficial cutting.    Please provide a brief description (age,
+not superficial cutting.  Please provide a brief description (age,
 gender, context) in the Coder's Notes section.
 
 - (0) Absent from culture
