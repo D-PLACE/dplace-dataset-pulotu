@@ -17,26 +17,26 @@
         {
             "rdf:about": "https://github.com/D-PLACE/dplace-dataset-pulotu",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.1-6-g1dbb124",
+            "dc:created": "v1.2",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.5",
+            "dc:created": "v5.2",
             "dc:title": "Glottolog"
         },
         {
             "rdf:about": "https://github.com/D-PLACE/pulotu-internal",
             "rdf:type": "prov:Entity",
-            "dc:created": "f444283",
+            "dc:created": "ec25dba",
             "dc:title": "Repository"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.10"
+            "dc:description": "3.12.3"
         },
         {
             "dc:title": "python-packages",
@@ -45,13 +45,10 @@
     ],
     "rdf:ID": "pulotu",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
-    "dialect": {
-        "commentPrefix": null
-    },
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 10160,
+            "dc:extent": 10423,
             "tableSchema": {
                 "columns": [
                     {
@@ -115,7 +112,7 @@
                             "Language_ID"
                         ],
                         "reference": {
-                            "resource": "cultures.csv",
+                            "resource": "societies.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -126,7 +123,7 @@
                             "Parameter_ID"
                         ],
                         "reference": {
-                            "resource": "questions.csv",
+                            "resource": "variables.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -148,7 +145,7 @@
                     "ID"
                 ]
             },
-            "url": "responses.csv"
+            "url": "data.csv"
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
@@ -203,7 +200,7 @@
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#glottocode",
                         "required": false,
-                        "valueUrl": "http://glottolog.org/resource/languoid/id/{glottocode}",
+                        "valueUrl": "http://glottolog.org/resource/languoid/id/{Glottocode}",
                         "name": "Glottocode"
                     },
                     {
@@ -228,11 +225,11 @@
                     "ID"
                 ]
             },
-            "url": "cultures.csv"
+            "url": "societies.csv"
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 86,
+            "dc:extent": 88,
             "tableSchema": {
                 "columns": [
                     {
@@ -255,6 +252,12 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "required": false,
                         "name": "Description"
+                    },
+                    {
+                        "datatype": "json",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#columnSpec",
+                        "required": false,
+                        "name": "ColumnSpec"
                     },
                     {
                         "datatype": "string",
@@ -285,11 +288,11 @@
                     "ID"
                 ]
             },
-            "url": "questions.csv"
+            "url": "variables.csv"
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CodeTable",
-            "dc:extent": 270,
+            "dc:extent": 277,
             "tableSchema": {
                 "columns": [
                     {
@@ -328,7 +331,7 @@
                             "Parameter_ID"
                         ],
                         "reference": {
-                            "resource": "questions.csv",
+                            "resource": "variables.csv",
                             "columnReference": [
                                 "ID"
                             ]

@@ -15,33 +15,33 @@ property | value
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://pulotu.com
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/D-PLACE/dplace-dataset-pulotu
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/D-PLACE/dplace-dataset-pulotu/tree/1dbb124">D-PLACE/dplace-dataset-pulotu v1.1-6-g1dbb124</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.5">Glottolog v4.5</a></li><li><a href="https://github.com/D-PLACE/pulotu-internal/tree/f444283">D-PLACE/pulotu-internal f444283</a></li></ol>
-[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.8.10</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/D-PLACE/dplace-dataset-pulotu/tree/v1.2">D-PLACE/dplace-dataset-pulotu v1.2</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.2">Glottolog v5.2</a></li><li><a href="https://github.com/D-PLACE/pulotu-internal/tree/ec25dba">D-PLACE/pulotu-internal ec25dba</a></li></ol>
+[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.12.3</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | pulotu
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
 
-## <a name="table-responsescsv"></a>Table [responses.csv](./responses.csv)
+## <a name="table-datacsv"></a>Table [data.csv](./data.csv)
 
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ValueTable](http://cldf.clld.org/v1.0/terms.rdf#ValueTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 10160
+[dc:extent](http://purl.org/dc/terms/extent) | 10423
 
 
 ### Columns
 
 Name/Property | Datatype | Description
  --- | --- | --- 
-[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
-[Language_ID](http://cldf.clld.org/v1.0/terms.rdf#languageReference) | `string` | References [cultures.csv::ID](#table-culturescsv)
-[Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | `string` | References [questions.csv::ID](#table-questionscsv)
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string`<br>Regex: `[a-zA-Z0-9_\-]+` | Primary key
+[Language_ID](http://cldf.clld.org/v1.0/terms.rdf#languageReference) | `string` | References [societies.csv::ID](#table-societiescsv)
+[Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | `string` | References [variables.csv::ID](#table-variablescsv)
 [Value](http://cldf.clld.org/v1.0/terms.rdf#value) | `string` | 
 [Code_ID](http://cldf.clld.org/v1.0/terms.rdf#codeReference) | `string` | References [codes.csv::ID](#table-codescsv)
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
 [Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | References [sources.bib::BibTeX-key](./sources.bib)
 
-## <a name="table-culturescsv"></a>Table [cultures.csv](./cultures.csv)
+## <a name="table-societiescsv"></a>Table [societies.csv](./societies.csv)
 
 property | value
  --- | ---
@@ -53,31 +53,32 @@ property | value
 
 Name/Property | Datatype | Description
  --- | --- | --- 
-[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string`<br>Regex: `[a-zA-Z0-9_\-]+` | Primary key
 [Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
 [Macroarea](http://cldf.clld.org/v1.0/terms.rdf#macroarea) | `string` | 
-[Latitude](http://cldf.clld.org/v1.0/terms.rdf#latitude) | `decimal` | 
-[Longitude](http://cldf.clld.org/v1.0/terms.rdf#longitude) | `decimal` | 
-[Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string` | 
-[ISO639P3code](http://cldf.clld.org/v1.0/terms.rdf#iso639P3code) | `string` | 
+[Latitude](http://cldf.clld.org/v1.0/terms.rdf#latitude) | `decimal`<br>&ge; -90<br>&le; 90 | 
+[Longitude](http://cldf.clld.org/v1.0/terms.rdf#longitude) | `decimal`<br>&ge; -180<br>&le; 180 | 
+[Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string`<br>Regex: `[a-z0-9]{4}[1-9][0-9]{3}` | 
+[ISO639P3code](http://cldf.clld.org/v1.0/terms.rdf#iso639P3code) | `string`<br>Regex: `[a-z]{3}` | 
 `Comment` | `string` | 
 `Ethonyms` | list of `string` (separated by `; `) | 
 
-## <a name="table-questionscsv"></a>Table [questions.csv](./questions.csv)
+## <a name="table-variablescsv"></a>Table [variables.csv](./variables.csv)
 
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ParameterTable](http://cldf.clld.org/v1.0/terms.rdf#ParameterTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 86
+[dc:extent](http://purl.org/dc/terms/extent) | 88
 
 
 ### Columns
 
 Name/Property | Datatype | Description
  --- | --- | --- 
-[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string`<br>Regex: `[a-zA-Z0-9_\-]+` | Primary key
 [Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
 [Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
+[ColumnSpec](http://cldf.clld.org/v1.0/terms.rdf#columnSpec) | `json` | 
 `Simplified_Name` | `string` | 
 `Datatype` | `string` | 
 `Section_Notes` | `string` | 
@@ -90,15 +91,15 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF CodeTable](http://cldf.clld.org/v1.0/terms.rdf#CodeTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 270
+[dc:extent](http://purl.org/dc/terms/extent) | 277
 
 
 ### Columns
 
 Name/Property | Datatype | Description
  --- | --- | --- 
-[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string` | Primary key
-[Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | `string` | The parameter or variable the code belongs to.<br>References [questions.csv::ID](#table-questionscsv)
+[ID](http://cldf.clld.org/v1.0/terms.rdf#id) | `string`<br>Regex: `[a-zA-Z0-9_\-]+` | Primary key
+[Parameter_ID](http://cldf.clld.org/v1.0/terms.rdf#parameterReference) | `string` | The parameter or variable the code belongs to.<br>References [variables.csv::ID](#table-variablescsv)
 [Name](http://cldf.clld.org/v1.0/terms.rdf#name) | `string` | 
 [Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
 

@@ -5,9 +5,8 @@ import collections
 
 from clldutils.text import split_text
 from clldutils.misc import slug
-from cldfbench import Dataset as BaseDataset, CLDFSpec
 
-import errata
+from pydplace.dataset import DatasetWithSocieties, data_schema
 
 # The following variables go into LanguageTable, we want to be able to identify these by ID:
 MD = {
@@ -81,19 +80,9 @@ def parameter_sort(parameter):
     )
 
 
-class Dataset(BaseDataset):
+class Dataset(DatasetWithSocieties):
     dir = pathlib.Path(__file__).parent
     id = "pulotu"
-
-    def cldf_specs(self):  # A dataset must declare all CLDF sets it creates.
-        return CLDFSpec(
-            dir=self.cldf_dir,
-            data_fnames={
-                'LanguageTable': 'cultures.csv',
-                'ParameterTable': 'questions.csv',
-                'ValueTable': 'responses.csv',
-            },
-            module="StructureDataset")
 
     def cmd_download(self, args):
         """
@@ -104,7 +93,7 @@ class Dataset(BaseDataset):
 
     def read(self, name, d=None):
         for row in (d or self.raw_dir.joinpath('pulotu-internal')).read_csv(name, dicts=True):
-            yield collections.OrderedDict((k, v.strip()) for k, v in row.items())
+            yield collections.OrderedDict((k, (v or '').strip()) for k, v in row.items())
 
     def _make_param(self, r, sections, codes, codetable):
         name = r['question'].strip()
@@ -114,6 +103,16 @@ class Dataset(BaseDataset):
             Simplified_Name=r['simplified_question'],
             Description=r['information'].replace('(VARIABLE LABEL REVERSED)', '').strip(),
             Section_Notes=sections[r['section_id']]['notes'] or sections[r['subsection_id']]['notes'],
+            # Option, Int, Float, Text map to Continuous, Ordinal, Categorical?
+            # Text only used for "Time Focus" params
+            # Int, Float -> Continuous
+
+            #
+            # map "Traditional|Contemporary Time Focus" to "society.main_focal_year"
+            # And also add respective "Time Focus" to "data.year"
+            # data.year can be a period!
+            #
+
             Datatype=r['response_type'] if r['id'] != '10' else 'Int',
             Category=sections[r['subsection_id']]['category'] or sections[r['section_id']]['category'],
             Section=sections[r['subsection_id']]['section'],
@@ -134,13 +133,19 @@ class Dataset(BaseDataset):
     def cmd_makecldf(self, args):
         args.writer.cldf.add_columns(
             'LanguageTable',
-            'Comment',
-            { 'name': 'Ethonyms', 'separator': '; '})
+            'Comment',  # comment
+            { 'name': 'Ethonyms', 'separator': '; '})  # alt_names_by_society
         args.writer.cldf.add_columns(
             'ParameterTable',
-            'Simplified_Name', 'Datatype', 'Section_Notes',
-            'Category', 'Section', 'Subsection')
-        args.writer.cldf.add_component('CodeTable')
+            # unit? can this be split off the question?
+            'Simplified_Name',
+            'Datatype',  # type
+            'Section_Notes',
+            'Category',
+            'Section',
+            'Subsection')
+        args.writer.cldf.add_component('CodeTable')  # ord
+
         args.writer.cldf.add_table(
             'glossary.csv',
             {
@@ -167,7 +172,7 @@ class Dataset(BaseDataset):
         for r in self.read('core_glossary.csv'):
             d = dict(
                 ID=slug(r['term']), Term=r['term'], Definition=r['definition'])
-            dd = errata.GLOSSARY.get(d['Term'])
+            dd = GLOSSARY.get(d['Term'])
             if dd:
                 if len(dd) == 2:
                     term, definition = dd
@@ -210,7 +215,7 @@ class Dataset(BaseDataset):
 
         codes = collections.defaultdict(collections.OrderedDict)
         for r in self.read('questions_option.csv'):
-            opts = re.split('(\([0-9?]\))', r['options'])
+            opts = re.split(r'(\([0-9?]\))', r['options'])
             assert not opts[0].strip()
             for k, v in zip(opts[1::2], opts[::2][1:]):
                 codes[r['question_ptr_id']][k[1:-1]] = v.strip()
@@ -366,4 +371,41 @@ VPK_2015 = {
 "92": "v94",
 "105": "v105",
 "106": "v106",
+}
+
+"""
+
+Finally, could we add a reference list at the bottom with the following:
+
+Mace, R., & Holden, C. J. (2005). A phylogenetic approach to cultural evolution. Trends in Ecology and Evolution, 20(3), 116-121.
+
+Murdock, G. P. (1950). Feasibility and implementation of comparative community research: With special reference to the Human Relations Area Files. American Sociological Review, 15(6), 713-720.
+
+Swanson, G. E. (1960). The birth of the gods; the origin of primitive beliefs. University of Michigan Press.
+
+
+"""
+GLOSSARY = {
+    'Great god': ('God', 'A supernatural agent who was not originally a human being, is not '
+                         'identified with or closely tied to a particular physical manifestation, '
+                         'and is more powerful than most human beings can expect to be in this '
+                         'life or the afterlife.'),
+    'Sacrifice': ('Costly sacrifice', lambda s: s),
+    'Nature god': (None, 'A supernatural agent who was not originally a human being, is identified '
+                         'with or closely tied to a particular feature of the natural world, and '
+                         'is more powerful than most human beings can expect to be in this life '
+                         'or the afterlife.'),
+    'Nature spirit': (None, 'A supernatural agent who was not originally a human being, is '
+                            'identified with or closely tied to a particular feature of the '
+                            'natural world, and is not more powerful than most human beings '
+                            'can expect to be in this life or the afterlife.'),
+    'Internal warfare': (None, 'Warfare between members of the same culture'),
+    'Local community': (None, '”[T]he maximal group of persons who normally reside together in '
+                              'face-to-face association” (Murdock, 1950)', 'murdock1950'),
+    'Deified ancestor': (None, lambda s: s.replace('became a god after death', 'acquired godlike powers after death')),
+    'Tapu': (None, lambda s: s.replace('Any restriction placed around', 'A restriction around')),
+    'High god': (None, lambda s: s.replace('Murdock, 1967, p 160', 'Swanson, 1960'), 'swanson1960'),
+    'Ritual': (None, lambda s: s.replace('A ritual is a', 'A').strip()),
+    'Culture': (None, lambda s: s.replace('Currie, Greenhill & Mace, 2010, p 3904; Mace & Jordan, 2005, p 116',
+                                          'Mace & Holden, 2005'), 'mace-holden-2005')
 }
