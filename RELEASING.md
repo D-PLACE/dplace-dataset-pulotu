@@ -6,7 +6,7 @@
    ```
 2. Re-create the CLDF data running
    ```shell
-   cldfbench makecldf --with-cldfreadme cldfbench_pulotu.py --glottolog-version v5.2
+   cldfbench makecldf --with-cldfreadme cldfbench_pulotu.py --glottolog-version v5.3
    ```
 3. Make sure the CLDF is valid:
    ```shell

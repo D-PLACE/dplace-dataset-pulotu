@@ -2,10 +2,9 @@ attrs==25.3.0
 babel==2.17.0
 bibtexparser==2.0.0b8
 bs4==0.0.2
-certifi==2025.4.26
-chardet==5.2.0
+certifi==2025.6.15
 cldfbench==1.14.1
--e git+https://github.com/D-PLACE/dplace-dataset-pulotu@a26070a803d75dc9cc67e8233d48eee0f9fa0fcd#egg=cldfbench_pulotu
+-e git+https://github.com/D-PLACE/dplace-dataset-pulotu@bf8948f1b064d10a2dadb48ffed3a01068995e94#egg=cldfbench_pulotu
 cldfcatalog==1.6.0
 cldfzenodo==2.1.2
 clldutils==3.24.2
@@ -15,6 +14,7 @@ csvw==3.5.1
 fiona==1.10.1
 gitdb==4.0.12
 greenlet==3.2.3
+html5lib==1.1
 idna==3.10
 iniconfig==2.1.0
 isodate==0.7.2
@@ -31,10 +31,10 @@ pluggy==1.6.0
 pybtex==0.24.0
 pycldf==1.42.0
 pycountry==24.6.1
--e git+https://github.com/d-place/pydplace@8a39c56e30c9714c9021c35f602270a4735f977e#egg=pydplace
+-e git+https://github.com/d-place/pydplace@e02bbc1f3e2b21b297c088fdfc4819df8db4b8a8#egg=pydplace
 pyglottolog==3.16.0
 Pygments==2.19.1
-pylatexenc==3.0a32
+pylatexenc==2.10
 pytest==8.4.0
 python-dateutil==2.9.0.post0
 rdflib==7.1.4
@@ -42,7 +42,7 @@ referencing==0.36.2
 requests==2.32.4
 rfc3986==1.5.0
 shapely==2.1.1
--e git+https://github.com/cldf/simplepybtex@09a7ecfd47001669617e6b34900511c45c76d5e4#egg=simplepybtex
+simplepybtex==0.1.0
 six==1.17.0
 smmap==5.0.2
 soupsieve==2.7
@@ -50,8 +50,9 @@ SQLAlchemy==1.4.54
 tabulate==0.9.0
 termcolor==3.1.0
 tqdm==4.67.1
-typing_extensions==4.14.0
+typing_extensions==4.13.2
 uritemplate==4.2.0
 urllib3==2.4.0
+webencodings==0.5.1
 xlrd==2.0.2
 zenodoclient==0.5.1
