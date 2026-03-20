@@ -4,7 +4,7 @@ bibtexparser==2.0.0b8
 bs4==0.0.2
 certifi==2025.6.15
 cldfbench==1.14.1
--e git+https://github.com/D-PLACE/dplace-dataset-pulotu@bf8948f1b064d10a2dadb48ffed3a01068995e94#egg=cldfbench_pulotu
+-e git+https://github.com/D-PLACE/dplace-dataset-pulotu@d69d8eb9209c9a516b6cf1cf023a919f222be6a2#egg=cldfbench_pulotu
 cldfcatalog==1.6.0
 cldfzenodo==2.1.2
 clldutils==3.24.2
